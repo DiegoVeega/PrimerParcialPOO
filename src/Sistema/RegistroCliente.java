@@ -12,5 +12,6 @@ import java.util.ArrayList;
 public class RegistroCliente extends Cliente{
     private ArrayList<Cliente> Clientes;
     private String id;
-    
+    private Fecha fechaInicio;
+    private Fecha fechaFin;
 }
