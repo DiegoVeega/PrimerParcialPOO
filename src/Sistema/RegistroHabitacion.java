@@ -15,7 +15,7 @@ public class RegistroHabitacion extends Habitacion{
         habitaciones=new ArrayList<>();
     }
     //Metodos.
-    public void add(Nombre NombreHabitacion){
+    public void add(){
         Habitacion habitacion = new Habitacion();
         //Nombre nombre= new Nombre();
         
