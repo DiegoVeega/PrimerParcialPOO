@@ -10,12 +10,12 @@
  */
 public class Reserva {
     //Atrubutos
-    public String codigo;
-    public String fechaent;
-    public String fechasal;
-    public boolean estado;
-    public int dias;
-    public String paquete;
+    private String codigo;
+    private String fechaent;
+    private String fechasal;
+    private boolean estado;
+    private int dias;
+    private String paquete;
     //Constructor
     public Reserva(){}
     //Metodos
