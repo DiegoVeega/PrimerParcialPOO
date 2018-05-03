@@ -8,7 +8,11 @@ package Sistema;
 public class Pago {
     private double MontoTotal;
     private Fecha FechaPago;
-    private Cliente Cliente;
+    public Cliente Cliente;
     private String Codigo;
+    /*----------------------------------ATRIBUTOS NECESARIOS PARA CALCULAR EL MONTO TOTAL------------------------
+    public Piso CostoPiso;
+    public Paquete CostoPaquete;
+*/
     
 }
