@@ -15,6 +15,6 @@ public class Cliente {
     private String Nombre;
     private String Apellido;
     private String Direccion;
-    public Arraylist<Habitacion> habitacion;
+    public ArrayList<Habitacion> habitaciones;
     public Pago pago;
 }
