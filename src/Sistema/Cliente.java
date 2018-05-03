@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import java.util.ArrayList;
 package Sistema;
 
 /**
@@ -14,6 +15,6 @@ public class Cliente {
     private String Nombre;
     private String Apellido;
     private String Direccion;
-    public Habitacion habitacion;
-    private String id;
+    public Arraylist<Habitacion> habitacion;
+    public Pago pago;
 }
