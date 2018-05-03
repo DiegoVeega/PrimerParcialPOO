@@ -12,6 +12,7 @@ public class Cliente {
     public ArrayList<Habitacion> habitaciones_de_cliente;
     public Pago pago;
 
+    public Cliente(){}
     public Cliente(String id, String Nombre, String Apellido, String Direccion, ArrayList<Habitacion> habitaciones_de_cliente, Pago pago) {
         this.id = id;
         this.Nombre = Nombre;
