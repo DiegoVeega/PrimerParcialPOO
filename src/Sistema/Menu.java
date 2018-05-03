@@ -23,6 +23,7 @@ public class Menu {
             
             op=leer.nextInt();
             switch(op){
+                //Opciones de acceso a opciones de registro.
                 case 1:
                     
                     break;
