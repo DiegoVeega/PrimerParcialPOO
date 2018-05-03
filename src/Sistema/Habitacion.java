@@ -6,7 +6,7 @@ package Sistema;
  */
 public class Habitacion {
     //Atributos.
-    public Nombre NombreHabitacion;//Clase aun no agregada, a espera de la clase.
+    public Nombre NombreHabitacion;
     private String TipoHabitacion;
     private Double precio;
     private Boolean Estado;

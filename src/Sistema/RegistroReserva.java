@@ -42,5 +42,14 @@ public class RegistroReserva extends Reserva{
         
         System.out.println("Ingrese la fecha de salida: ");
         reserva.setFechasal(leer.nextLine());
+        
+        //Tipo de paquete
+        System.out.println("Ingrese el tipo de paquete: ");
+        reserva.setPaquete(leer.nextLine());
+        
+        //Dias de reserva
+        System.out.println("Ingrese los dias de reserva: ");
+        reserva.setDias(leer.nextInt());
+        
     }
 }
