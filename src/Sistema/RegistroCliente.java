@@ -14,4 +14,14 @@ public class RegistroCliente extends Cliente{
     private String id;
     private Fecha fechaInicio;
     private Fecha fechaFin;
+    
+    public RegistroCliente(){}
+    public RegistroCliente(ArrayList<Cliente> Clientes, String id, Fecha fechaInicio, Fecha fechaFin) {
+        this.Clientes = Clientes;
+        this.id = id;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+    }
+    
+    
 }
