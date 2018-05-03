@@ -2,7 +2,7 @@ package Sistema;
 
 /**
  *
- * @author diego
+ * @author Diego Vega <00148816@uca.edu.sv>
  */
 public class Habitacion {
     //Atributos.
