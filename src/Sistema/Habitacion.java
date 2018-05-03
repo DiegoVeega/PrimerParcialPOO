@@ -45,4 +45,20 @@ public class Habitacion {
     public void setEstado(Boolean Estado) {
         this.Estado = Estado;
     }  
+    //SETTERS Y GETTERS 
+    public Nombre getNombreHabitacion() {
+        return NombreHabitacion;
+    }
+    public void setNombreHabitacion(Nombre NombreHabitacion) {
+        this.NombreHabitacion = NombreHabitacion;
+    }
+
+    public Cliente getHuesped() {
+        return Huesped;
+    }
+
+    public void setHuesped(Cliente Huesped) {
+        this.Huesped = Huesped;
+    }
+    
 }
