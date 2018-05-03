@@ -20,5 +20,18 @@ public class RegistroReserva extends Reserva{
         
         reservas.add(reserva);
         Scanner leer = new Scanner(System.in);
+        
+        do {
+            System.out.println("Cuantas reservas desea hacer: ");
+            
+            if (leer.nextInt() == 1){
+                System.out.println("La reserva se hizo con exito");
+            }
+            else{
+                System.out.println("Se hicieron dos reservas");
+            }
+            
+        } while (leer.nextInt() < 1 && leer.nextInt() > 2);
+        
     }
 }
