@@ -1,18 +1,25 @@
 package Sistema;
+
 import java.util.ArrayList;
+
 /**
  *
  * @author Kriz
  */
 public class Cliente {
+
     private String id;
     private String Nombre;
     private String Apellido;
     private String Direccion;
     public ArrayList<Habitacion> habitaciones_de_cliente;
+    public Fecha FechaLlegada;
+    public Fecha FechaSalida;
     public Pago pago;
 
-    public Cliente(){}
+    public Cliente() {
+    }
+
     public Cliente(String id, String Nombre, String Apellido, String Direccion, ArrayList<Habitacion> habitaciones_de_cliente, Pago pago) {
         this.id = id;
         this.Nombre = Nombre;
@@ -70,5 +77,4 @@ public class Cliente {
         this.pago = pago;
     }
 
-    
 }
