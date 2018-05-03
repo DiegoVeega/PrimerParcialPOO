@@ -6,6 +6,7 @@ package Sistema;
  */
 public class Habitacion {
     //Atributos.
+    public Nombre NombreHabitacion;//Clase aun no agregada, a espera de la clase.
     private String TipoHabitacion;
     private Double precio;
     private Boolean Estado;
@@ -43,13 +44,5 @@ public class Habitacion {
 
     public void setEstado(Boolean Estado) {
         this.Estado = Estado;
-    }
-    //A espera de la Clase.
-    public Cliente getHuesped() {
-        return Huesped;
-    }
-
-    public void setHuesped(Cliente Huesped) {
-        this.Huesped = Huesped;
-    }   
+    }  
 }
