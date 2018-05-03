@@ -9,7 +9,7 @@ public class Habitacion {
     private String TipoHabitacion;
     private Double precio;
     private Boolean Estado;
-    private Cliente Huesped;
+    public Cliente Huesped;
     //Metodos.
     //Constructor.
     public Habitacion(){
