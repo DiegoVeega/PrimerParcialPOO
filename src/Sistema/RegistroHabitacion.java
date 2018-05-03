@@ -22,7 +22,7 @@ public class RegistroHabitacion extends Habitacion{
         habitaciones.add(habitacion);
         Scanner leer=new Scanner(System.in);
         //PARA SABER EL TIPO DE HABITACION SE PIENSA AGREGAR UN METODO QUE VERIFIQUE SI EL NUMERO DE HABITACION ES PAR O NO.
-        
+        habitacion.setTipoHabitacion(TipoHabitacion);
         //SET PRECIO BASE DEL CUARTO
         System.out.println("Ingrese el precio de la habitacion: ");
         habitacion.setPrecio(leer.nextDouble());
