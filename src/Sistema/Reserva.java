@@ -11,25 +11,34 @@ package Sistema;
  * @author Julio Flores <00081817@uca.edu.sv>
  */
 public class Reserva {
-    //Atrubutos
+    //Atributos
+    public Cliente cliente;
     private String codigo;
     private String fechaent;
     private String fechasal;
-    private boolean estado;
     private int dias;
     private String paquete;
     //Constructor
     public Reserva(){}
     //Metodos
-    public Reserva( String codigo, String fechaent, String fechasal, boolean estado, int dias, String paquete){
+
+    public Reserva(Cliente cliente, String codigo, String fechaent, String fechasal, int dias, String paquete) {
+        this.cliente = cliente;
         this.codigo = codigo;
         this.fechaent = fechaent;
         this.fechasal = fechasal;
-        this.estado = estado;
         this.dias = dias;
         this.paquete = paquete;
     }
     //Setters and getters
+    public Cliente getCliente(){
+        return cliente;
+    }
+    
+    public void setCliente(){
+        this.cliente = cliente;
+    }
+    
     public String getCodigo(){
         return codigo;
     } 
@@ -52,14 +61,6 @@ public class Reserva {
     
     public void setFechasal(String fechasal){
         this.fechasal = fechasal;
-    }
-    
-    public boolean getEstado(){
-        return estado;
-    }
-    
-    public void setEstado(boolean estado){
-        this.estado = estado;
     }
     
     public int getDias(){
