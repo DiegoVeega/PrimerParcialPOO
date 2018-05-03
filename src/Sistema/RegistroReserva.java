@@ -25,13 +25,22 @@ public class RegistroReserva extends Reserva{
             System.out.println("Cuantas reservas desea hacer: ");
             
             if (leer.nextInt() == 1){
-                System.out.println("La reserva se hizo con exito");
+                System.out.println("Se hizo 1 reserva con exito");
             }
             else{
-                System.out.println("Se hicieron dos reservas");
+                System.out.println("Se hicieron 2 reservas");
             }
             
         } while (leer.nextInt() < 1 && leer.nextInt() > 2);
+        //Pidiendo el codigo 
+        System.out.println("Ingrese el codigo: ");
+        reserva.setCodigo(leer.nextLine());
         
+        //Obteniendo fecha de entrada y salida...
+        System.out.println("Ingrese la fecha de entrada: ");
+        reserva.setFechaent(leer.nextLine());
+        
+        System.out.println("Ingrese la fecha de salida: ");
+        reserva.setFechasal(leer.nextLine());
     }
 }
