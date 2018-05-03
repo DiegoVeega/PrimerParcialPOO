@@ -14,4 +14,11 @@ public class RegistroReserva extends Reserva{
     public RegistroReserva(){
         reservas = new ArrayList<>();
     }
+    
+    public void add(Reserva NombreReserva){
+        Reserva reserva = new Reserva();
+        
+        reservas.add(reserva);
+        Scanner leer = new Scanner(System.in);
+    }
 }
