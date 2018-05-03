@@ -2,7 +2,8 @@ package Sistema;
 
 
 import java.util.ArrayList;
-        
+import java.util.Scanner;
+
 /**
  *
  * @author Julio Flores <00081817@uca.edu.sv>
