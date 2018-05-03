@@ -11,7 +11,6 @@ public class Cliente {
     private String id;
     private String Nombre;
     private String Apellido;
-    private String Direccion;
     public ArrayList<Habitacion> habitaciones_de_cliente;
     public Fecha FechaLlegada;
     public Fecha FechaSalida;
@@ -20,12 +19,13 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(String id, String Nombre, String Apellido, String Direccion, ArrayList<Habitacion> habitaciones_de_cliente, Pago pago) {
+    public Cliente(String id, String Nombre, String Apellido, ArrayList<Habitacion> habitaciones_de_cliente, Fecha FechaLlegada, Fecha FechaSalida, Pago pago) {
         this.id = id;
         this.Nombre = Nombre;
         this.Apellido = Apellido;
-        this.Direccion = Direccion;
         this.habitaciones_de_cliente = habitaciones_de_cliente;
+        this.FechaLlegada = FechaLlegada;
+        this.FechaSalida = FechaSalida;
         this.pago = pago;
     }
 
@@ -53,20 +53,28 @@ public class Cliente {
         this.Apellido = Apellido;
     }
 
-    public String getDireccion() {
-        return Direccion;
-    }
-
-    public void setDireccion(String Direccion) {
-        this.Direccion = Direccion;
-    }
-
     public ArrayList<Habitacion> getHabitaciones_de_cliente() {
         return habitaciones_de_cliente;
     }
 
     public void setHabitaciones_de_cliente(ArrayList<Habitacion> habitaciones_de_cliente) {
         this.habitaciones_de_cliente = habitaciones_de_cliente;
+    }
+
+    public Fecha getFechaLlegada() {
+        return FechaLlegada;
+    }
+
+    public void setFechaLlegada(Fecha FechaLlegada) {
+        this.FechaLlegada = FechaLlegada;
+    }
+
+    public Fecha getFechaSalida() {
+        return FechaSalida;
+    }
+
+    public void setFechaSalida(Fecha FechaSalida) {
+        this.FechaSalida = FechaSalida;
     }
 
     public Pago getPago() {
@@ -76,5 +84,8 @@ public class Cliente {
     public void setPago(Pago pago) {
         this.pago = pago;
     }
+    
+    
+    
 
 }
