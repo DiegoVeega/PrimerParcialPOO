@@ -16,6 +16,7 @@ public class RegistroCliente{
 
     private ArrayList<Cliente> Clientes;
     public Fecha fechaInicio;
+    private String id;
     private Fecha fechaFin;
 
     public RegistroCliente() {
@@ -29,13 +30,13 @@ public class RegistroCliente{
         Scanner input = new Scanner(System.in);
 
         System.out.println("ID de Cliente:");
-        cliente.setNombre(input.nextLine());
+        cliente.setId(input.nextLine());
 
         System.out.println("Nombre de Cliente:");
         cliente.setNombre(input.nextLine());
 
         System.out.println("Apellido de Cliente:");
-        cliente.setNombre(input.nextLine());
+        cliente.setApellido(input.nextLine());
 
         Fecha fechaLlegada = new Fecha();
         Fecha fechaSalida = new Fecha();
