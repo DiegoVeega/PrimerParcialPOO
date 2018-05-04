@@ -22,6 +22,7 @@ public class MainClass {
         }while(PASS.equals("ViñaRafinha")==false);
         //MENU.
         Menu menu= Menu.getInstance();
-        //agregar menu. mostrar este pedira un parametro para lograr mostrar todos los campos
+        //Correr las opciones para acceder a los metodos.
+        menu.Opciones();
     }
 }
