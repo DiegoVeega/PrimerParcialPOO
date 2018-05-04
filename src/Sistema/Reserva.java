@@ -14,6 +14,7 @@ public class Reserva {
     private int dias;
     private String paquete;
     //Constructor
+    
     public Reserva(){}
     //Metodos
 
@@ -26,7 +27,8 @@ public class Reserva {
         this.dias = dias;
         this.paquete = paquete;
     }
-
+    
+    //Setters and Getters...
     public Cliente getCliente() {
         return cliente;
     }
