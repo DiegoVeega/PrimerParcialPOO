@@ -8,7 +8,7 @@ import java.util.Set;
  *
  * @author Diego Vega <00148816@uca.edu.sv>
  */
-public class RegistroHabitacion extends Habitacion{
+public class RegistroHabitacion{
     //Atributos.
     private final ArrayList<Habitacion> habitaciones;
     
