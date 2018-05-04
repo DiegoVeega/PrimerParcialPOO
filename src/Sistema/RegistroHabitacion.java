@@ -48,7 +48,7 @@ public class RegistroHabitacion extends Habitacion{
         int num;
         String nom;
         Scanner cambio=new Scanner(System.in);
-        System.out.println("Segun la lista mostrada luego de ingresar un producto, ingrese el numero correspondiente segun fila del producto que desea modificar./n NOTA: LA LISTA EMPIEZA CON EL NUMERO 0. ");
+        System.out.println("Segun la lista mostrada luego de ingresar un registro, ingrese el numero correspondiente segun fila del producto que desea modificar./n NOTA: LA LISTA EMPIEZA CON EL NUMERO 0. ");
         num=cambio.nextInt();
         
         System.out.println("Ingrese Tipo de habitacion: ");
