@@ -27,7 +27,7 @@ public class RegistroPisos extends Piso{
         piso.setEstado(true);
         
         System.out.println("Ingrese el piso en que se encuentra la habitacion: ");
-        piso.setPiso();
+        piso.setPiso(leer.next().charAt(0));
     }
     
     public void modificar(){
@@ -45,6 +45,6 @@ public class RegistroPisos extends Piso{
         pisos.get(nume).setEstado(false);
         
         System.out.println("Ingrese el piso que desea modificar: ");
-        pisos.get(nume).setPiso();
+        pisos.get(nume).setPiso(modificar.next().charAt(0));
     }
 }
