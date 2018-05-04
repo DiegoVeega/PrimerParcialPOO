@@ -24,13 +24,14 @@ public class RegistroHabitacion extends Habitacion{
         //PARA SABER EL TIPO DE HABITACION SE PIENSA AGREGAR UN METODO QUE VERIFIQUE SI EL NUMERO DE HABITACION ES PAR O NO.
         System.out.println("Ingrese tipo de habitacion, Doble o Sencilla.");
         habitacion.setTipoHabitacion(leer.nextLine());
-        //SET PRECIO BASE DEL CUARTO
-        System.out.println("Ingrese el precio de la habitacion: ");
-        habitacion.setPrecio(leer.nextDouble());
-        //SET ESTADO
+        
         System.out.println("Ingrese el Estado de la habitacion: ");
         //PROBABLE CONDICION PARA IDENTIFICAR EL ESTADO DEL CUARTO.
         habitacion.setEstado(Boolean.TRUE);
+        
+        System.out.println("Ingrese el precio de la habitacion: ");
+        habitacion.setPrecio(leer.nextDouble());
+        //SET ESTADO
     }
     
     public void remove(){
