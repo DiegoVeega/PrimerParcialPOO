@@ -63,7 +63,6 @@ public class RegistroReserva{
     
     public void modificar(){
         Reserva reserva = new Reserva();
-        String mod;
         int numero;
         Scanner modificar = new Scanner(System.in);
         System.out.println("Eliga que reserva desea modificar: ");
