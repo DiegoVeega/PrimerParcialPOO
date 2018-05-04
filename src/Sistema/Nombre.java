@@ -6,17 +6,11 @@ package Sistema;
  * @author Kriz
  */
 public class Nombre {
-    public Piso piso;
-    private int numero;
-    
-    public Nombre(){}
+  public Piso piso;
+  public int num;
+  
+  public Nombre (){}
 
-    public Nombre(Piso piso, int numero) {
-        this.piso = piso;
-        this.numero = numero;
-    }
-
-    
     public Piso getPiso() {
         return piso;
     }
@@ -25,13 +19,16 @@ public class Nombre {
         this.piso = piso;
     }
 
-    public int getNumero() {
-        return numero;
+    public int getNum() {
+        return num;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setNum(int num) {
+        this.num = num;
     }
+
+   
+  
    
     
 }

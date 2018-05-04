@@ -14,6 +14,8 @@ public class Piso {
     private boolean estado;
     private char piso;
 
+    public Piso(){}
+    
     public double getCosto() {
         return costo;
     }
@@ -39,6 +41,8 @@ public class Piso {
     }
     
     
-    
+    public void verificar(){
+        
+    }
     
 }

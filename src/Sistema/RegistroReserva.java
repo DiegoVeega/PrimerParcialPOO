@@ -52,4 +52,16 @@ public class RegistroReserva extends Reserva{
         reserva.setDias(leer.nextInt());
         
     }
+    public void remove(){
+        Reserva reserva = new Reserva();
+        int eliminar;
+        System.out.println("¿Que elemento de la lista desea eliminar? ");
+        Scanner numero = new Scanner(System.in);
+        eliminar = numero.nextInt();
+        reservas.remove(eliminar);
+    }
+    
+    public void modificar(){
+        
+    }
 }
