@@ -1,4 +1,4 @@
-/*
+m/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -42,5 +42,15 @@ public class Paquete {
         System.out.println("Ingrese un nuevo precio: ");
         Scanner leer = new Scanner(System.in);
         nuevoPrecio = leer.nextDouble();
-    }   
+    }  
+     public void add(){
+     
+         Paquete paquete = new Paquete();
+         Servicios.add("Premium");
+         Servicios.add("Basico");
+         
+         
+         
+     }
+    
 }
