@@ -129,6 +129,7 @@ public class RegistroCliente{
         }
         System.out.println("Fecha de incio: ");
         System.out.println(fechaInicio.getDia()+" "+fechaInicio.getMes()+" "+fechaInicio.getAnnio());
+        System.out.println(" ");
         System.out.println("Fecha de salida: ");
         System.out.println(fechaFin.getDia()+" "+fechaFin.getMes()+" "+fechaFin.getAnnio());
         
