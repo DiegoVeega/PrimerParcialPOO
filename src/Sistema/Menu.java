@@ -97,6 +97,7 @@ public class Menu {
                         valor1 = lec.nextInt();
 
                         switch (valor1) {
+                            //VERIFICAR POR ERROR EN OUT.
                             case 1:
                                 //Se accede al metodo para agregar
                                 habitaciones.add();
