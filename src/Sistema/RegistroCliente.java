@@ -116,6 +116,7 @@ public class RegistroCliente extends Cliente {
     }
     
     public void mostrar(){
+        
         for(Cliente e:Clientes){
             System.out.println("ID de cliente: ");
             System.out.print(e.getId());
@@ -124,8 +125,11 @@ public class RegistroCliente extends Cliente {
             System.out.println(" ");
             System.out.print("Apellido de Cliente: $"+e.getApellido());
             System.out.println(" ");
-            
+            //FECHA:
         }
+        System.out.println("Fecha de incio: ");
+        System.out.println(fechaInicio.getDia()+" "+fechaInicio.getMes()+" "+fechaInicio.getAnnio());
+        System.out.println("Fecha de salida: ");
+        System.out.println(fechaFin.getDia()+" "+fechaFin.getMes()+" "+fechaFin.getAnnio());
     }
-    
 }
