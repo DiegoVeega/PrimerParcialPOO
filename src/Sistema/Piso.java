@@ -39,10 +39,4 @@ public class Piso {
     public void setPiso(char piso) {
         this.piso = piso;
     }
-    
-    
-    public void verificar(){
-        
-    }
-    
 }
