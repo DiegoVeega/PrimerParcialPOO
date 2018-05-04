@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Sistema;
 
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author diego
+ * @author Diego Vega <00148816@uca.edu.sv>
  */
 public class MainClass {
     
@@ -26,7 +21,7 @@ public class MainClass {
            }
         }while(PASS.equals("ViñaRafinha")==false);
         //MENU.
-        Menu menu= new Menu();
-        //agregar menu. mostrar
+        Menu menu= Menu.getInstance();
+        //agregar menu. mostrar este pedira un parametro para lograr mostrar todos los campos
     }
 }
