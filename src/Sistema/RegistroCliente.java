@@ -15,7 +15,6 @@ import java.util.Scanner;
 public class RegistroCliente{
 
     private ArrayList<Cliente> Clientes;
-    private String id;
     public Fecha fechaInicio;
     private Fecha fechaFin;
 
