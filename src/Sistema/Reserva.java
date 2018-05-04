@@ -83,7 +83,5 @@ public class Reserva {
 
     public void setPaquete(String paquete) {
         this.paquete = paquete;
-    }
-
-    
+    }   
 }
