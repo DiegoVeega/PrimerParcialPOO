@@ -25,15 +25,6 @@ public class RegistroHabitacion extends Habitacion{
         System.out.println("Ingrese tipo de habitacion, Doble o Sencilla.");
         habitacion.setTipoHabitacion(leer.nextLine());
         
-        
-        Nombre nombre=new Nombre();
-        nombre.num=1;
-        nombre.piso='a';
-        
-        habitacion.setNombreHabitacion(NombreHabitacion);
-        
-        
-        
         System.out.println("Ingrese el Estado de la habitacion: ");
         //PROBABLE CONDICION PARA IDENTIFICAR EL ESTADO DEL CUARTO.
         habitacion.setEstado(Boolean.TRUE);

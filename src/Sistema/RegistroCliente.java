@@ -4,55 +4,66 @@
  * and open the template in the editor.
  */
 package Sistema;
+
 import java.util.ArrayList;
 import java.util.Scanner;
+
 /**
  *
  * @author Kriz
  */
-public class RegistroCliente extends Cliente{
+public class RegistroCliente extends Cliente {
+
     private ArrayList<Cliente> Clientes;
     private String id;
     public Fecha fechaInicio;
     private Fecha fechaFin;
-    
-    public RegistroCliente(){
+
+    public RegistroCliente() {
         Clientes = new ArrayList<>();
     }
-    public void add(){
-        
+
+    public void add() {
+
         Cliente cliente = new Cliente();
         //Nombre nombre= new Nombre();
-        Scanner input=new Scanner(System.in);
-        
+        Scanner input = new Scanner(System.in);
+
         System.out.println("ID:");
         cliente.setNombre(input.nextLine());
-        
+
         System.out.println("Nombre:");
         cliente.setNombre(input.nextLine());
-        
+
         System.out.println("Apellido:");
         cliente.setNombre(input.nextLine());
-        int i=1;
-        while(i!=0){
-        System.out.println("cantidad de habitaciones?: (maximo 2)");
-        i=input.nextInt();
-        if(i<=2){
-            break;
-        }
-        }
+
+        Fecha fechaLlegada = new Fecha();
+        Fecha fechaSalida = new Fecha();
+
+        System.out.println("Fecha en que llega?");
+        System.out.println("dia?");
+        fechaLlegada.setDia(input.nextInt());
+        System.out.println("mes?");
+        fechaLlegada.setMes(input.nextInt());
+        System.out.println("annio?");
+        fechaLlegada.setAnnio(input.nextInt());
         
-        if(i==1){
-            Clientes.add(cliente);
-        }
-        else
-        {
-            Clientes.add(cliente);
-            Clientes.add(cliente);
-        }
+        System.out.println("Fecha en que sale?");
+        System.out.println("dia?");
+        fechaSalida.setDia(input.nextInt());
+        System.out.println("mes?");
+        fechaSalida.setMes(input.nextInt());
+        System.out.println("annio?");
+        fechaSalida.setAnnio(input.nextInt());
+        
+        cliente.setFechaLlegada(fechaLlegada);
+        
+        cliente.setFechaSalida(fechaSalida);
+        
+        
+        Clientes.add(cliente);
         
     }
-    
-        
-        
+
 }
