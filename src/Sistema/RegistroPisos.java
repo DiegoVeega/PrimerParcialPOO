@@ -8,11 +8,15 @@ import java.util.ArrayList;
  */
 //Esta esperando que se cree la clase piso...
 public class RegistroPisos extends Piso{
-    private final ArrayList<Piso> piso;
+    private final ArrayList<Piso> pisos;
     
     public RegistroPisos(){
-        piso = new ArrayList<>();
+        pisos = new ArrayList<>();
     }
     
-    
+    public void add(Piso NombrePiso){
+        Piso piso = new Piso();
+        
+        pisos.add(Piso)
+    }
 }
