@@ -2,6 +2,7 @@ package Sistema;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Set;
 
 /**
  *
@@ -17,13 +18,21 @@ public class RegistroHabitacion extends Habitacion{
     //Metodos.
     public void add(){
         Habitacion habitacion = new Habitacion();
-        //Nombre nombre= new Nombre();
         
         habitaciones.add(habitacion);
         Scanner leer=new Scanner(System.in);
         //PARA SABER EL TIPO DE HABITACION SE PIENSA AGREGAR UN METODO QUE VERIFIQUE SI EL NUMERO DE HABITACION ES PAR O NO.
         System.out.println("Ingrese tipo de habitacion, Doble o Sencilla.");
         habitacion.setTipoHabitacion(leer.nextLine());
+        
+        
+        Nombre nombre=new Nombre();
+        nombre.num=1;
+        nombre.piso='a';
+        
+        habitacion.setNombreHabitacion(NombreHabitacion);
+        
+        
         
         System.out.println("Ingrese el Estado de la habitacion: ");
         //PROBABLE CONDICION PARA IDENTIFICAR EL ESTADO DEL CUARTO.

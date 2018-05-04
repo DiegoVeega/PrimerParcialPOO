@@ -33,11 +33,15 @@ public class RegistroCliente extends Cliente{
         
         System.out.println("Apellido:");
         cliente.setNombre(input.nextLine());
-        int i=0;
-        while(i<=2){
+        int i=1;
+        while(i!=0){
         System.out.println("cantidad de habitaciones?: (maximo 2)");
         i=input.nextInt();
+        if(i<=2){
+            break;
         }
+        }
+        
         if(i==1){
             Clientes.add(cliente);
         }

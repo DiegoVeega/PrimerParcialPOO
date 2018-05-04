@@ -12,6 +12,7 @@ public class Cliente {
     private String Nombre;
     private String Apellido;
     public ArrayList<Habitacion> habitaciones_de_cliente;
+    public ArrayList<Reserva> reservaciones;
     public Fecha FechaLlegada;
     public Fecha FechaSalida;
     public Pago pago;
