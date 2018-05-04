@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author Kriz
  */
-public class RegistroCliente extends Cliente {
+public class RegistroCliente{
 
     private ArrayList<Cliente> Clientes;
     private String id;
