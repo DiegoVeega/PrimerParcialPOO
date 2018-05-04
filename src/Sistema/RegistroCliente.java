@@ -51,7 +51,4 @@ public class RegistroCliente extends Cliente{
     
         
         
-    }
-    
-    
 }
