@@ -7,6 +7,7 @@ package Sistema;
 public class Reserva {
     //Atributos
     public Cliente cliente;
+    public Habitacion habitacion;
     private String codigo;
     private String fechaent;
     private String fechasal;
@@ -16,60 +17,71 @@ public class Reserva {
     public Reserva(){}
     //Metodos
 
-    public Reserva(Cliente cliente, String codigo, String fechaent, String fechasal, int dias, String paquete) {
+    public Reserva(Cliente cliente, Habitacion habitacion, String codigo, String fechaent, String fechasal, int dias, String paquete) {
         this.cliente = cliente;
+        this.habitacion = habitacion;
         this.codigo = codigo;
         this.fechaent = fechaent;
         this.fechasal = fechasal;
         this.dias = dias;
         this.paquete = paquete;
     }
-    //Setters and getters
-    public Cliente getCliente(){
+
+    public Cliente getCliente() {
         return cliente;
     }
-    
-    public void setCliente(){
+
+    public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
-    
-    public String getCodigo(){
+
+    public Habitacion getHabitacion() {
+        return habitacion;
+    }
+
+    public void setHabitacion(Habitacion habitacion) {
+        this.habitacion = habitacion;
+    }
+
+    public String getCodigo() {
         return codigo;
-    } 
-    
-    public void setCodigo(String codigo){
+    }
+
+    public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-    
-    public String getFechaent(){
+
+    public String getFechaent() {
         return fechaent;
     }
 
-    public void setFechaent(String fechaent){
+    public void setFechaent(String fechaent) {
         this.fechaent = fechaent;
     }
-    
-    public String getFechasal(){
+
+    public String getFechasal() {
         return fechasal;
     }
-    
-    public void setFechasal(String fechasal){
+
+    public void setFechasal(String fechasal) {
         this.fechasal = fechasal;
     }
-    
-    public int getDias(){
+
+    public int getDias() {
         return dias;
     }
-    
-    public void setDias(int dias){
+
+    public void setDias(int dias) {
         this.dias = dias;
     }
-    
-    public String getPaquete(){
+
+    public String getPaquete() {
         return paquete;
     }
-    
-    public void setPaquete(String paquete){
+
+    public void setPaquete(String paquete) {
         this.paquete = paquete;
     }
+
+    
 }
