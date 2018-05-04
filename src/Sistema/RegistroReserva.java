@@ -15,7 +15,7 @@ public class RegistroReserva extends Reserva{
         reservas = new ArrayList<>();
     }
     
-    public void add(Reserva NombreReserva){
+    public void add(){
         Reserva reserva = new Reserva();
         
         reservas.add(reserva);
@@ -77,5 +77,9 @@ public class RegistroReserva extends Reserva{
         
         System.out.println("Ingrese el paquete que desea modificar: ");
         reservas.get(numero).setPaquete(modificar.nextLine());
+    }
+    public void mostrar(){
+        Reserva reserva = new Reserva();
+        
     }
 }
