@@ -33,7 +33,7 @@ public class RegistroReserva extends Reserva{
             
         } while (leer.nextInt() < 1 && leer.nextInt() > 2);
         //Pidiendo el codigo 
-        System.out.println("Ingrese el codigo: ");
+        System.out.println("Ingrese el codigo de la reserva: ");
         reserva.setCodigo(leer.nextLine());
         
         //Obteniendo fecha de entrada y salida...
@@ -44,7 +44,7 @@ public class RegistroReserva extends Reserva{
         reserva.setFechasal(leer.nextLine());
         
         //Tipo de paquete
-        System.out.println("Ingrese el tipo de paquete: ");
+        System.out.println("Ingrese el tipo de paquete, puede ser PREMIUN o BASICO: ");
         reserva.setPaquete(leer.nextLine());
         
         //Dias de reserva
@@ -55,13 +55,27 @@ public class RegistroReserva extends Reserva{
     public void remove(){
         Reserva reserva = new Reserva();
         int eliminar;
-        System.out.println("¿Que elemento de la lista desea eliminar? ");
+        System.out.println("¿Que reserva desea eliminar? ");
         Scanner numero = new Scanner(System.in);
         eliminar = numero.nextInt();
         reservas.remove(eliminar);
     }
     
     public void modificar(){
+        Reserva reserva = new Reserva();
+        String mod;
+        int numero;
+        Scanner modificar = new Scanner(System.in);
+        System.out.println("Eliga que reserva desea modificar: ");
+        numero=modificar.nextInt();
         
+        System.out.println("Ingrese la fecha de salida que desea modificar: ");
+        reservas.get(numero).setFechasal(modificar.nextLine());
+        
+        System.out.println("Ingrese los dias que desea modificar: ");
+        reservas.get(numero).setDias(modificar.nextInt());
+        
+        System.out.println("Ingrese el paquete que desea modificar: ");
+        reservas.get(numero).setPaquete(modificar.nextLine());
     }
 }
