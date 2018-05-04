@@ -43,8 +43,7 @@ public class PaquetePremium {
         Servicios.add("Acceso a buffet de desayuno ");
         Servicios.add("Acceso ilimitado a la piscina ");
         Servicios.add("Servicio a la habitacion ");
-        Servicios.add("Acceso ilimitado a la piscina ");
-        Servicios.add("Servicio a la habitacion ");
+        Servicios.add("Acceso ilimitado al minibar ");
         Servicios.add("Internet Ilimitado ");
 
     }
