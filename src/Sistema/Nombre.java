@@ -6,16 +6,21 @@ package Sistema;
  * @author Kriz
  */
 public class Nombre {
-  public Piso piso;
+  public char piso;
   public int num;
   
   public Nombre (){}
 
-    public Piso getPiso() {
+    public Nombre(char piso, int num) {
+        this.piso = piso;
+        this.num = num;
+    }
+
+    public char getPiso() {
         return piso;
     }
 
-    public void setPiso(Piso piso) {
+    public void setPiso(char piso) {
         this.piso = piso;
     }
 
@@ -27,6 +32,7 @@ public class Nombre {
         this.num = num;
     }
 
+    
    
   
    
