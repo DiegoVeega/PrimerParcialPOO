@@ -24,7 +24,7 @@ public class Piso {
         this.costo = costo;
     }
 
-    public boolean isEstado() {
+    public boolean getEstado() {
         return estado;
     }
 
