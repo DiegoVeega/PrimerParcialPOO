@@ -26,11 +26,25 @@ public class RegistroPisos extends Piso{
         System.out.println("Ingrese el estado en que se encuentra el piso de donde se quiere hacer la reserva: ");
         piso.setEstado(true);
         
-        System.out.println("Ingrese el piso en que se enceuntra la habitacion: ");
+        System.out.println("Ingrese el piso en que se encuentra la habitacion: ");
         piso.setPiso();
     }
     
     public void modificar(){
+        Piso piso = new Piso();
+        String mod;
+        int nume;
+        Scanner modificar = new Scanner(System.in);
+        System.out.println("Ingrese la lista que desea modificar: ");
+        nume = modificar.nextInt();
         
+        System.out.println("Ingrese el costo que desea modificar: ");
+        pisos.get(nume).setCosto(modificar.nextDouble());
+        
+        System.out.println("Ingrese el estado que desea modificar de un piso: ");
+        pisos.get(nume).setEstado(false);
+        
+        System.out.println("Ingrese el piso que desea modificar: ");
+        pisos.get(nume).setPiso();
     }
 }
