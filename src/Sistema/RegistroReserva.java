@@ -54,11 +54,11 @@ public class RegistroReserva extends Reserva{
     }
     public void remove(){
         Reserva reserva = new Reserva();
-        int numero;
+        int eliminar;
         System.out.println("¿Que elemento de la lista desea eliminar? ");
-        Scanner nume = new Scanner(System.in);
-        numero = nume.nextInt();
-        reservas.remove(numero);
+        Scanner numero = new Scanner(System.in);
+        eliminar = numero.nextInt();
+        reservas.remove(eliminar);
     }
     
     public void modificar(){
