@@ -62,9 +62,9 @@ public class RegistroHabitacion{
         //A TRAVES DE CONDICION PARA SIMPLIFICAR.
     }
     public void mostrar(){
+        //Orden
         for(Habitacion e:habitaciones){
-            System.out.println("Tipo de habitacion: ");
-            System.out.print(e.getTipoHabitacion());
+            System.out.println("Tipo de habitacion: "+e.getTipoHabitacion());
             System.out.print(" ");
             System.out.print("Estado: "+e.getEstado());
             System.out.println(" ");
