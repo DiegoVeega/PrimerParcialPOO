@@ -13,13 +13,13 @@ public class MainClass {
         do{
             //JOptionPane. 
            PASS=JOptionPane.showInputDialog("Bienvenido, por favor ingresa el PASSWORD: ");
-           if(PASS.equals("ViñaRafinha")){
+           if(PASS.equals("Rafinha")){
                JOptionPane.showMessageDialog(null, "Se inicio correctamente.");
            }
            else{
                JOptionPane.showMessageDialog(null, "El PASSWORD es incorrecto. Intentalo de nuevo.");
            }
-        }while(PASS.equals("ViñaRafinha")==false);
+        }while(PASS.equals("Rafinha")==false);
         //MENU.
         Menu menu= Menu.getInstance();
         //Correr las opciones para acceder a los metodos.
