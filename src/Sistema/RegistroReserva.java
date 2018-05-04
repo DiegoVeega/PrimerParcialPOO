@@ -79,18 +79,15 @@ public class RegistroReserva{
         reservas.get(numero).setPaquete(modificar.nextLine());
     }
     public void mostrar(){
-        for (Reserva e:reservas){
-            System.out.println("Codigo de reserva: ");
-            System.out.print(e.getCodigo());
-            System.out.println("Fecha de entrada: ");
-            System.out.print(e.getFechaent());
-            System.out.println("Fecha de salida: ");
-            System.out.print(e.getFechasal());
-            System.out.println("Tipo de paquete: ");
-            System.out.print(e.getPaquete());
-            System.out.println("Dias de reserva: ");
-            System.out.print(e.getDias());
-        }
         
+        for (Reserva e:reservas){
+            //Orden
+            System.out.println("Codigo de reserva: "+e.getCodigo());
+            System.out.println("Fecha de entrada: "+e.getFechaent());
+            System.out.println("Fecha de salida: "+e.getFechasal());
+            System.out.println("Tipo de paquete: "+e.getPaquete());
+            System.out.println("Dias de reserva: "+e.getDias());
+            System.out.println("\n");
+        }
     }
 }
