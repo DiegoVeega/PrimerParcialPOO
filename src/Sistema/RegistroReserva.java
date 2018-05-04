@@ -79,7 +79,18 @@ public class RegistroReserva extends Reserva{
         reservas.get(numero).setPaquete(modificar.nextLine());
     }
     public void mostrar(){
-        Reserva reserva = new Reserva();
+        for (Reserva e:reservas){
+            System.out.println("Codigo de reserva: ");
+            System.out.print(e.getCodigo());
+            System.out.println("Fecha de entrada: ");
+            System.out.print(e.getFechaent());
+            System.out.println("Fecha de salida: ");
+            System.out.print(e.getFechasal());
+            System.out.println("Tipo de paquete: ");
+            System.out.print(e.getPaquete());
+            System.out.println("Dias de reserva: ");
+            System.out.print(e.getDias());
+        }
         
     }
 }
