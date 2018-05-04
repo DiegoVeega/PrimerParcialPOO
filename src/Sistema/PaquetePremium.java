@@ -40,8 +40,12 @@ public class PaquetePremium {
     public void add() {
 
         Paquete paquete = new Paquete();
-        Servicios.add("Premium");
-        Servicios.add("Basico");
+        Servicios.add("Acceso a buffet de desayuno ");
+        Servicios.add("Acceso ilimitado a la piscina ");
+        Servicios.add("Servicio a la habitacion ");
+        Servicios.add("Acceso ilimitado a la piscina ");
+        Servicios.add("Servicio a la habitacion ");
+        Servicios.add("Internet Ilimitado ");
 
     }
 
