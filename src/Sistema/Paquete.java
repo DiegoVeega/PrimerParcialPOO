@@ -36,36 +36,11 @@ public class Paquete {
         this.Premium = Premium;
     }
     
-    public void modificarPrecio(){
+    public void modificar(){
        
         double nuevoPrecio;
-        System.out.println("Ingrese un nuevo precio");
+        System.out.println("Ingrese un nuevo precio: ");
         Scanner leer = new Scanner(System.in);
         nuevoPrecio = leer.nextDouble();
-    }
-    
-    public void add(){
-        
-        System.out.println("");
-        Paquete paquete = new Paquete();
-        Servicios.add("");
-        
-        
-        Scanner leer=new Scanner(System.in);
-        
-        System.out.println("Ingrese el nombre del producto: ");
-        .setNombre(leer.nextLine()); 
-        
-        System.out.println("Ingrese el cantidad del producto: ");
-        System.out.println("Ingrese el costo del producto: ");
-        producto.setCosto(Float.parseFloat(leer.nextLine())); 
-        
-        System.out.println("Ingrese el nombre del proveedor del producto: ");
-        producto.setProveedor(leer.nextLine()
-    }
-
-    
-    
+    }   
 }
-
-
