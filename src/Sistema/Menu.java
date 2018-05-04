@@ -44,23 +44,34 @@ public class Menu {
                     RegistroCliente clientes = new RegistroCliente();
                     while (valor != 4) {
                         System.out.println("Seleccione una opcion a realizar: \n");
-                        System.out.println("1. Agregar Producto.");
-                        System.out.println("2. Eliminar/Descartar Producto.");
-                        System.out.println("3. Modificar Producto(CARGAR o Decargar un producto).");
+                        System.out.println("1. Agregar Cliente.");
+                        System.out.println("2. Eliminar/Descartar Cliente.");
+                        System.out.println("3. Modificar Cliente.");
                         System.out.println("4. Salir.\n");
 
                         valor = lee.nextInt();
 
                         switch (valor) {
                             case 1:
-                                //Se accede al metodo para agregar
-                                
+                                clientes.add();
+                                System.out.println("\n******************************\n");
+                                //mostrar lo agregado
+                                clientes.mostrar();
+                                System.out.println("\n******************************\n");
                                 break;
                             case 2:
-                                //Se accede al metodo para eliminar
+                                clientes.remove();
+                                System.out.println("\n******************************\n");
+                                //mostrar lo agregado
+                                clientes.mostrar();
+                                System.out.println("\n******************************\n");
                                 break;
                             case 3:
-                                //Se accede al metodo para modificar
+                                clientes.set();
+                                System.out.println("\n******************************\n");
+                                //mostrar lo agregado
+                                clientes.mostrar();
+                                System.out.println("\n******************************\n");
                                 break;
                             case 4:
                                 //Se saldra del programa.
@@ -78,9 +89,9 @@ public class Menu {
                     RegistroHabitacion habitaciones = new RegistroHabitacion();
                     while (valor1 != 4) {
                         System.out.println("Seleccione una opcion a realizar: \n");
-                        System.out.println("1. Agregar Producto.");
-                        System.out.println("2. Eliminar/Descartar Producto.");
-                        System.out.println("3. Modificar Producto(CARGAR o Decargar un producto).");
+                        System.out.println("1. Agregar Habitacion.");
+                        System.out.println("2. Eliminar/Descartar Habitacion.");
+                        System.out.println("3. Modificar Habitacion.");
                         System.out.println("4. Salir.\n");
 
                         valor1 = lec.nextInt();
@@ -121,6 +132,48 @@ public class Menu {
                     break;
                 case 3:
                     //Se accedera a las opciones del Registro Pisos.
+                    int valor2 = 5;
+                    Scanner lec1 = new Scanner(System.in);
+                    RegistroPisos pisos = new RegistroPisos();
+                    while (valor2 != 4) {
+                        System.out.println("Seleccione una opcion a realizar: \n");
+                        System.out.println("1. Agregar Piso.");
+                        System.out.println("2. Eliminar/Descartar Piso.");
+                        System.out.println("3. Modificar Piso.");
+                        System.out.println("4. Salir.\n");
+
+                        valor2 = lec1.nextInt();
+
+                        switch (valor2) {
+                            case 1:
+                                //Se accede al metodo para agregar
+                                pisos.add();
+                                System.out.println("\n******************************\n");
+                                //mostrar lo agregado
+                                System.out.println("\n******************************\n");
+                                break;
+                            case 2:
+                                //Se accede al metodo para eliminar
+                                pisos.remove();
+                                System.out.println("\n******************************\n");
+                                //mostrar lo agregado
+                                System.out.println("\n******************************\n");
+                                break;
+                            case 3:
+                                //Se accede al metodo para modificar
+                                pisos.modificar();
+                                System.out.println("\n******************************\n");
+                                //mostrar lo agregado
+                                System.out.println("\n******************************\n");
+                                break;
+                            case 4:
+                                //Se saldra del programa.
+                                System.out.println("ADIOS. Saliendo del sistema.");
+                                break;
+                            default:
+                                System.out.println("Usted ingreso " + valor2 + " Por favor ingrese un valor valido.");
+                        }
+                    }
                     break;
                 case 4:
                     //Se accedera a las opciones del Registro Reservas.
@@ -129,9 +182,9 @@ public class Menu {
                     RegistroReserva reservas = new RegistroReserva();
                     while (valor3 != 4) {
                         System.out.println("Seleccione una opcion a realizar: \n");
-                        System.out.println("1. Agregar Producto.");
-                        System.out.println("2. Eliminar/Descartar Producto.");
-                        System.out.println("3. Modificar Producto(CARGAR o Decargar un producto).");
+                        System.out.println("1. Agregar Reserva.");
+                        System.out.println("2. Eliminar/Descartar Reserva.");
+                        System.out.println("3. Modificar Reserva.");
                         System.out.println("4. Salir.\n");
 
                         valor3 = lec2.nextInt();
