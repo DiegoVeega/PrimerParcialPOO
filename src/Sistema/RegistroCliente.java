@@ -26,38 +26,31 @@ public class RegistroCliente extends Cliente{
         Scanner input=new Scanner(System.in);
         
         System.out.println("ID:");
-        String cadena=input.nextLine();
-        cliente.setNombre(cadena);
+        cliente.setNombre(input.nextLine());
         
         System.out.println("Nombre:");
-        String nombre=input.nextLine();
-        cliente.setNombre(nombre);
+        cliente.setNombre(input.nextLine());
         
         System.out.println("Apellido:");
-        String apellido=input.nextLine();
-        cliente.setNombre(apellido);
+        cliente.setNombre(input.nextLine());
         int i=0;
-        while(i>2){
+        while(i<=2){
         System.out.println("cantidad de habitaciones?: (maximo 2)");
         i=input.nextInt();
-        break;
+        }
+        if(i==1){
+            Clientes.add(cliente);
+        }
+        else
+        {
+            Clientes.add(cliente);
+            Clientes.add(cliente);
+        }
+        
+    }
+    
         
         
-        System.out.println("Nombre:");
-        String cadena=input.nextLine();
-        cliente.setNombre(cadena);
-        System.out.println("Nombre:");
-        String cadena=input.nextLine();
-        cliente.setNombre(cadena);
-        System.out.println("Nombre:");
-        String cadena=input.nextLine();
-        cliente.setNombre(cadena);
-        System.out.println("Nombre:");
-        String cadena=input.nextLine();
-        cliente.setNombre(cadena);
-        
-        
-        Clientes.add(cliente);
     }
     
     
