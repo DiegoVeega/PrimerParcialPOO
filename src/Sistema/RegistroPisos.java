@@ -2,6 +2,7 @@ package Sistema;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Arrays;
 /**
  *
  * @author Julio Flores <00081817@uca.edu.sv>
@@ -46,5 +47,17 @@ public class RegistroPisos extends Piso{
         
         System.out.println("Ingrese el piso que desea modificar: ");
         pisos.get(nume).setPiso(modificar.next().charAt(0));
+    }
+    
+    public void remove(){
+        Piso piso=new Piso();
+        char[] nombrespisos ={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+        int nume;
+        System.out.println("escriba el piso que quiere eliminar(a,b,c,etc)");
+        Scanner num=new Scanner(System.in);
+        char elim=num.next(".").charAt(0);  
+        
+        //busca en el array abecedario la posicion en la que esta la letra que ingreso
+        pisos.remove(Arrays.binarySearch(nombrespisos, elim));
     }
 }
