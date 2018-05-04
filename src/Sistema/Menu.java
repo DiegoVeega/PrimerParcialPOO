@@ -139,7 +139,7 @@ public class Menu {
                         switch (valor3) {
                             case 1:
                                 //Se accede al metodo para agregar
-                                reservas.add(reservas);
+                                reservas.add();
                                 System.out.println("\n******************************\n");
                                 //mostrar lo agregado
                                 System.out.println("\n******************************\n");
