@@ -25,8 +25,10 @@ public class RegistroHabitacion{
         System.out.println("Ingrese tipo de habitacion, Doble o Sencilla.");
         habitacion.setTipoHabitacion(leer.nextLine());
         
+        //No necesario, cambio automatico
         System.out.println("Ingrese el Estado de la habitacion: ");
-        //PROBABLE CONDICION PARA IDENTIFICAR EL ESTADO DEL CUARTO.
+        //No necesario, cambio automatico
+        
         habitacion.setEstado(Boolean.TRUE);
         
         System.out.println("Ingrese el precio de la habitacion: ");
@@ -54,7 +56,10 @@ public class RegistroHabitacion{
         System.out.println("Ingrese Tipo de habitacion: ");
         habitaciones.get(num).setTipoHabitacion(cambio.nextLine());
         
+        //No necesario, cambio automatico
         System.out.println("Ingrese nuevo estado para la habitacion (Si esta habilitada pasara a no estarlo): ");
+        //No necesario, cambio automatico
+        
         habitaciones.get(num).setEstado(Boolean.FALSE);
         
         System.out.println("Ingrese nuevo precio para la habitacion: ");
