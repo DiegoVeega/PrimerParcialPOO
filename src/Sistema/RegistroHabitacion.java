@@ -53,9 +53,6 @@ public class RegistroHabitacion{
         System.out.println("Ingrese Tipo de habitacion: ");
         habitaciones.get(num).setTipoHabitacion(cambio.nextLine());
         
-        //No necesario, cambio automatico
-        System.out.println("Ingrese nuevo estado para la habitacion (Si esta habilitada pasara a no estarlo): ");
-        //No necesario, cambio automatico
         
         habitaciones.get(num).setEstado(Boolean.FALSE);
         
