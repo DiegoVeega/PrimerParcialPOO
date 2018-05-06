@@ -32,9 +32,10 @@ public class PaqueteBasico {
 
     public void add() {
 
-        Paquete paquete = new Paquete();
+        PaqueteBasico paquete = new PaqueteBasico();
         Servicios.add("Acceso a piscina");
         Servicios.add("Internet Ilimitado ");
 
     }
+    
 }
