@@ -27,7 +27,7 @@ public class Menu {
         Scanner leer = new Scanner(System.in);
 
         while (op != 5) {
-            System.out.println("Bienvenido, porfavor complete cada uno de los siguientes registros. ");
+            System.out.println("Bienvenido, por favor complete cada uno de los siguientes registros. ");
             System.out.println("1. Registro de Clientes.");
             System.out.println("2. Registro de Habitaciones.");
             System.out.println("3. Registro de Pisos.");
