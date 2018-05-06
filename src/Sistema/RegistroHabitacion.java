@@ -25,10 +25,7 @@ public class RegistroHabitacion{
         System.out.println("Ingrese tipo de habitacion, Doble o Sencilla.");
         habitacion.setTipoHabitacion(leer.nextLine());
         
-        //No necesario, cambio automatico
-        System.out.println("Ingrese el Estado de la habitacion: ");
-        //No necesario, cambio automatico
-        
+       
         habitacion.setEstado(Boolean.TRUE);
         
         System.out.println("Ingrese el precio de la habitacion: ");
