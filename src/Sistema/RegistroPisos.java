@@ -26,7 +26,7 @@ public class RegistroPisos {
         System.out.println("Ingrese el costo del piso: ");
         piso.setCosto(leer.nextDouble());
 
-        System.out.println("Ingrese el estado en que se encuentra el piso de donde se quiere hacer la reserva: ");
+        
         piso.setEstado(true);
 
         System.out.println("Ingrese el piso en que se encuentra la habitacion: ");
@@ -38,13 +38,14 @@ public class RegistroPisos {
         String mod;
         int nume;
         Scanner modificar = new Scanner(System.in);
+        System.out.println("**********SE MODIFICO ESTADO DEL PISO AUTOMATICAMENTE*************");
         System.out.println("Ingrese la lista que desea modificar: ");
         nume = modificar.nextInt();
 
         System.out.println("Ingrese el costo que desea modificar: ");
         pisos.get(nume).setCosto(modificar.nextDouble());
 
-        System.out.println("Ingrese el estado que desea modificar de un piso: ");
+       
         pisos.get(nume).setEstado(false);
 
         System.out.println("Ingrese el piso que desea modificar: ");
