@@ -6,11 +6,11 @@ package Sistema;
  */
 public class Habitacion {
     //Atributos.
-    public Nombre NombreHabitacion;
+    //public Nombre NombreHabitacion;
     private String TipoHabitacion;
     private Double precio;
     private Boolean Estado;
-    public Cliente Huesped;
+    //public Cliente Huesped;
     //Metodos.
     //Constructor.
     public Habitacion(){
@@ -19,7 +19,7 @@ public class Habitacion {
         this.TipoHabitacion=TipoHabitacion;
         this.precio=precio;
         this.Estado=Estado;
-        this.Huesped=Huesped;
+        //this.Huesped=Huesped;
     }
     //SETTER Y GETTERS
     public String getTipoHabitacion() {
@@ -45,7 +45,12 @@ public class Habitacion {
     public void setEstado(Boolean Estado) {
         this.Estado = Estado;
     }  
+
+    void add(String sencilla, double d, Boolean TRUE) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     //SETTERS Y GETTERS 
+    /**
     public Nombre getNombreHabitacion() {
         return NombreHabitacion;
     }
@@ -60,5 +65,6 @@ public class Habitacion {
     public void setHuesped(Cliente Huesped) {
         this.Huesped = Huesped;
     }
+    */
     
 }
