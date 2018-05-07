@@ -78,7 +78,7 @@ public class RegistroCliente {
         int num;
         String nom;
         Scanner cambio = new Scanner(System.in);
-        System.out.println("Segun la lista mostrada luego de ingresar un registro, ingrese el numero correspondiente segun fila del producto que desea modificar./n NOTA: LA LISTA EMPIEZA CON EL NUMERO 0. ");
+        System.out.println("Ingrese la persona del registro que desea modificar, empieza en cero");
         num = cambio.nextInt();
 
         System.out.println("ID de Cliente:");
