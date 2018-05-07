@@ -70,11 +70,12 @@ public class RegistroPisos {
     public void mostrar() {
         //MODIFICAR, NO COSTO PORCENTAJE AGREGADO
         for(Piso e:pisos){
-            System.out.println("Costo del piso: $"+e.getCosto());
+            System.out.println("Porcentaje agregado al costo "+e.getCosto()+" %");
             System.out.print(" ");
             System.out.print("Estado de piso: "+e.getEstado());
             System.out.println(" ");
             System.out.print("Piso: "+e.getPiso());
+            System.out.println("******************************");
             System.out.println("\n");
         }
     }
