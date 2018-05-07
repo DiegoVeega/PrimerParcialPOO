@@ -23,14 +23,16 @@ public class RegistroPisos {
 
         pisos.add(piso);
         Scanner leer = new Scanner(System.in);
-        //MODIFICAR, NO COSTO PORCENTAJE AGREGADO
-        System.out.println("Ingrese el costo del piso: ");
+        //MODIFICAR, DEBERIA HACRELO AUTOMATICAMENTE
+        //AGREGAR CONDICION QUE LO VERIFIQUE
+        System.out.println("Ingrese el parcentaje agregado del piso del piso: ");
         piso.setCosto(leer.nextDouble());
 
         
         piso.setEstado(true);
 
         System.out.println("Ingrese el piso en que se encuentra la habitacion: ");
+        //DEBERIA INDICARSE QUE AL SER LOS ULTIMOS NIVELES SE AGREGARA UN COSTO EXTRA DEL 20% si es E O F 
         piso.setPiso(leer.next().charAt(0));
     }
 
@@ -70,7 +72,7 @@ public class RegistroPisos {
     public void mostrar() {
         //MODIFICAR, NO COSTO PORCENTAJE AGREGADO
         for(Piso e:pisos){
-            System.out.println("Porcentaje agregado al costo "+e.getCosto()+" %");
+            System.out.println("Porcentaje agregado al costo total "+e.getCosto()+" %");
             System.out.print(" ");
             System.out.print("Estado de piso: "+e.getEstado());
             System.out.println(" ");
