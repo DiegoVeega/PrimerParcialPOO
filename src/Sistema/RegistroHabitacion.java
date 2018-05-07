@@ -47,6 +47,7 @@ public class RegistroHabitacion{
         int num;
         String nom;
         Scanner cambio=new Scanner(System.in);
+        System.out.println("**********SE MODIFICO ESTADO DEL PISO AUTOMATICAMENTE*************");
         System.out.println("Segun la lista mostrada luego de ingresar un registro, ingrese el numero correspondiente segun fila de la habitacion  que desea modificar.\n NOTA: LA LISTA EMPIEZA CON EL NUMERO 0. ");
         num=cambio.nextInt();
         
