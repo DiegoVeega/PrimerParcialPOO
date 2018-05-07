@@ -117,42 +117,7 @@ public class RegistroCliente {
             }
             i+=1;
         }
-        /*
-        System.out.println("ID de Cliente:");
-        Clientes.get(num).setId(cambio.nextLine());
-
-        System.out.println("Nombre de Cliente:");
-        Clientes.get(num).setNombre(cambio.nextLine());
-
-        System.out.println("Apellido de Cliente:");
-        Clientes.get(num).setApellido(cambio.nextLine());
-
-        //ERROR EN SET FECHA
-        Fecha fechaLlegada = new Fecha();
-        Fecha fechaSalida = new Fecha();
-
-        System.out.println("**********Fecha de llegada**********");
-        System.out.println("Dia: ");
-        fechaLlegada.setDia(cambio.nextInt());
-        System.out.println("Mes: ");
-        fechaLlegada.setMes(cambio.nextInt());
-        System.out.println("Annio: ");
-        fechaLlegada.setAnnio(cambio.nextInt());
-
-        cliente.setFechaLlegada(fechaLlegada);
-
-        System.out.println("**********Fecha de salida**********");
-        System.out.println("Dia: ");
-        fechaSalida.setDia(cambio.nextInt());
-        System.out.println("Mes: ");
-        fechaSalida.setMes(cambio.nextInt());
-        System.out.println("Annio: ");
-        fechaSalida.setAnnio(cambio.nextInt());
-
-        cliente.setFechaSalida(fechaSalida);
-
-        Clientes.set(num, cliente);
-        */
+        
     }
 
     public void mostrar() {
@@ -168,27 +133,9 @@ public class RegistroCliente {
             System.out.println("Fecha de salida: ");
             System.out.println(e.getFechaSalida().getDia() + " / " + e.getFechaSalida().getMes() + " / " + e.getFechaSalida().getAnnio());
             System.out.println("******************************");
-            /**
-             * Iterable<Fecha> fecha = null; for (Fecha d : fecha) {
-             * System.out.println("Fecha de incio: ");
-             * System.out.println(d.getDia() + " " + d.getMes() + " " +
-             * d.getAnnio()); System.out.println(" "); System.out.println("Fecha
-             * de salida: "); System.out.println(d.getDia() + " " + d.getMes() +
-             * " " + d.getAnnio());
-             *
-             * System.out.println("\n"); }
-             *
-             */
+            
         }
     }
 }
 
-/**
- * System.out.println("Fecha de incio: ");
- * System.out.println(fechaInicio.getDia()+" "+fechaInicio.getMes()+"
- * "+fechaInicio.getAnnio()); System.out.println(" "); System.out.println("Fecha
- * de salida: "); System.out.println(fechaFin.getDia()+" "+fechaFin.getMes()+"
- * "+fechaFin.getAnnio());
- *
- * System.out.println("\n");
- */
+
