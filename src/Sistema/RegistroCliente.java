@@ -163,10 +163,10 @@ public class RegistroCliente {
             System.out.print("Apellido de Cliente: " + e.getApellido());
             System.out.println("\n");
             System.out.println("Fecha de incio: ");
-            System.out.println(e.getFechaLlegada().getDia() + " " + e.getFechaLlegada().getMes() + " " + e.getFechaLlegada().getAnnio());
+            System.out.println(e.getFechaLlegada().getDia() + " / " + e.getFechaLlegada().getMes() + " / " + e.getFechaLlegada().getAnnio());
             System.out.println(" ");
             System.out.println("Fecha de salida: ");
-            System.out.println(e.getFechaSalida().getDia() + " " + e.getFechaSalida().getMes() + " " + e.getFechaSalida().getAnnio());
+            System.out.println(e.getFechaSalida().getDia() + " / " + e.getFechaSalida().getMes() + " / " + e.getFechaSalida().getAnnio());
             System.out.println("******************************");
             /**
              * Iterable<Fecha> fecha = null; for (Fecha d : fecha) {
