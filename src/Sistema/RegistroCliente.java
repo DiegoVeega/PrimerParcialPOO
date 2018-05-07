@@ -91,32 +91,32 @@ public class RegistroCliente {
         Clientes.get(num).setApellido(cambio.nextLine());
         
         //ERROR EN SET FECHA
-/**
+        
         Fecha fechaLlegada = new Fecha();
         Fecha fechaSalida = new Fecha();
 
         System.out.println("**********Fecha de llegada**********");
         System.out.println("Dia: ");
-        fechaInicio.setDia(cambio.nextInt());
+        fechaLlegada.setDia(cambio.nextInt());
         System.out.println("Mes: ");
-        fechaInicio.setMes(cambio.nextInt());
+        fechaLlegada.setMes(cambio.nextInt());
         System.out.println("Annio: ");
-        fechaInicio.setAnnio(cambio.nextInt());
+        fechaLlegada.setAnnio(cambio.nextInt());
 
         cliente.setFechaLlegada(fechaLlegada);
 
         System.out.println("**********Fecha de salida**********");
         System.out.println("Dia: ");
-        fechaFin.setDia(cambio.nextInt());
+        fechaSalida.setDia(cambio.nextInt());
         System.out.println("Mes: ");
-        fechaFin.setMes(cambio.nextInt());
+        fechaSalida.setMes(cambio.nextInt());
         System.out.println("Annio: ");
-        fechaFin.setAnnio(cambio.nextInt());
+        fechaSalida.setAnnio(cambio.nextInt());
 
         cliente.setFechaSalida(fechaSalida);
         
         Clientes.set(num, cliente);
-        */
+        
     }
 
     public void mostrar() {
