@@ -74,13 +74,50 @@ public class RegistroCliente {
     }
 
     public void set() {
-        Cliente cliente = new Cliente();
-        int num;
-        String nom;
         Scanner cambio = new Scanner(System.in);
-        System.out.println("Ingrese la persona del registro que desea modificar, empieza en cero");
-        num = cambio.nextInt();
+        System.out.println("Ingrese el Id de la persona a modificar");
+        //num = cambio.nextInt();
+        String nom = cambio.nextLine();
+        int i=0;
+        for (Cliente e : Clientes) {
+            if (e.getId().equals(nom)) {
+                System.out.println("ID de Cliente:");
 
+                Clientes.get(i).setId(cambio.nextLine());
+
+                System.out.println("Nombre de Cliente:");
+                Clientes.get(i).setNombre(cambio.nextLine());
+
+                System.out.println("Apellido de Cliente:");
+                Clientes.get(i).setApellido(cambio.nextLine());
+                
+                Fecha fechaLlegada = new Fecha();
+                Fecha fechaSalida = new Fecha();
+
+                System.out.println("**********Fecha de llegada**********");
+                System.out.println("Dia: ");
+                fechaLlegada.setDia(cambio.nextInt());
+                System.out.println("Mes: ");
+                fechaLlegada.setMes(cambio.nextInt());
+                System.out.println("Annio: ");
+                fechaLlegada.setAnnio(cambio.nextInt());
+
+                Clientes.get(i).setFechaLlegada(fechaLlegada);
+
+                System.out.println("**********Fecha de salida**********");
+                System.out.println("Dia: ");
+                fechaSalida.setDia(cambio.nextInt());
+                System.out.println("Mes: ");
+                fechaSalida.setMes(cambio.nextInt());
+                System.out.println("Annio: ");
+                fechaSalida.setAnnio(cambio.nextInt());
+
+                Clientes.get(i).setFechaSalida(fechaSalida);
+
+            }
+            i+=1;
+        }
+        /*
         System.out.println("ID de Cliente:");
         Clientes.get(num).setId(cambio.nextLine());
 
@@ -89,9 +126,8 @@ public class RegistroCliente {
 
         System.out.println("Apellido de Cliente:");
         Clientes.get(num).setApellido(cambio.nextLine());
-        
+
         //ERROR EN SET FECHA
-        
         Fecha fechaLlegada = new Fecha();
         Fecha fechaSalida = new Fecha();
 
@@ -114,24 +150,23 @@ public class RegistroCliente {
         fechaSalida.setAnnio(cambio.nextInt());
 
         cliente.setFechaSalida(fechaSalida);
-        
+
         Clientes.set(num, cliente);
-        
+        */
     }
 
     public void mostrar() {
         for (Cliente e : Clientes) {
-            System.out.println("ID de cliente: "+e.getId());
+            System.out.println("ID de cliente: " + e.getId());
             System.out.print("Nombre de Cliente: " + e.getNombre());
             System.out.println(" ");
             System.out.print("Apellido de Cliente: " + e.getApellido());
             System.out.println("\n");
-            Fecha fechas = new Fecha();
             System.out.println("Fecha de incio: ");
-            System.out.println(fechas.getDia() + " " +fechas.getMes() + " " + fechas.getAnnio());
+            System.out.println(e.getFechaLlegada().getDia() + " " + e.getFechaLlegada().getMes() + " " + e.getFechaLlegada().getAnnio());
             System.out.println(" ");
             System.out.println("Fecha de salida: ");
-            System.out.println(fechas.getDia() + " " +fechas.getMes() + " " + fechas.getAnnio());
+            System.out.println(e.getFechaSalida().getDia() + " " + e.getFechaSalida().getMes() + " " + e.getFechaSalida().getAnnio());
             System.out.println("******************************");
             /**
              * Iterable<Fecha> fecha = null; for (Fecha d : fecha) {
@@ -142,7 +177,7 @@ public class RegistroCliente {
              * " " + d.getAnnio());
              *
              * System.out.println("\n"); }
-            *
+             *
              */
         }
     }
