@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author Kriz
  */
-public class RegistroCliente{
+public class RegistroCliente {
 
     private ArrayList<Cliente> Clientes;
     public Fecha fechaInicio;
@@ -48,9 +48,9 @@ public class RegistroCliente{
         fechaLlegada.setMes(input.nextInt());
         System.out.println("Annio: ");
         fechaLlegada.setAnnio(input.nextInt());
-        
+
         cliente.setFechaLlegada(fechaLlegada);
-        
+
         System.out.println("**********Fecha de salida**********");
         System.out.println("Dia: ");
         fechaSalida.setDia(input.nextInt());
@@ -58,30 +58,29 @@ public class RegistroCliente{
         fechaSalida.setMes(input.nextInt());
         System.out.println("Annio: ");
         fechaSalida.setAnnio(input.nextInt());
-        
+
         cliente.setFechaSalida(fechaSalida);
-        
-        
+
         Clientes.add(cliente);
     }
-    
-    public void remove(){
+
+    public void remove() {
         Cliente cliente = new Cliente();
         int nume;
         System.out.println("Segun la lista mostrada luego de ingresar un producto, ingrese el numero correspondiente segun fila del producto que desea remover./n NOTA: LA LISTA EMPIEZA CON EL NUMERO 0. ");
-        Scanner num=new Scanner(System.in);
-        nume=num.nextInt();
+        Scanner num = new Scanner(System.in);
+        nume = num.nextInt();
         Clientes.remove(nume);
     }
 
-    public void set(){
+    public void set() {
         Cliente cliente = new Cliente();
         int num;
         String nom;
-        Scanner cambio=new Scanner(System.in);
+        Scanner cambio = new Scanner(System.in);
         System.out.println("Segun la lista mostrada luego de ingresar un registro, ingrese el numero correspondiente segun fila del producto que desea modificar./n NOTA: LA LISTA EMPIEZA CON EL NUMERO 0. ");
-        num=cambio.nextInt();
-        
+        num = cambio.nextInt();
+
         System.out.println("ID de Cliente:");
         Clientes.get(num).setId(cambio.nextLine());
 
@@ -90,6 +89,8 @@ public class RegistroCliente{
 
         System.out.println("Apellido de Cliente:");
         Clientes.get(num).setApellido(cambio.nextLine());
+        
+        //ERROR EN SET FECHA
 
         Fecha fechaLlegada = new Fecha();
         Fecha fechaSalida = new Fecha();
@@ -101,9 +102,9 @@ public class RegistroCliente{
         fechaInicio.setMes(cambio.nextInt());
         System.out.println("Annio: ");
         fechaInicio.setAnnio(cambio.nextInt());
-        
+
         cliente.setFechaLlegada(fechaLlegada);
-        
+
         System.out.println("**********Fecha de salida**********");
         System.out.println("Dia: ");
         fechaFin.setDia(cambio.nextInt());
@@ -111,28 +112,47 @@ public class RegistroCliente{
         fechaFin.setMes(cambio.nextInt());
         System.out.println("Annio: ");
         fechaFin.setAnnio(cambio.nextInt());
-        
+
         cliente.setFechaSalida(fechaSalida);
+        
+        Clientes.set(num, cliente);
     }
-    
-    public void mostrar(){
-        
-        for(Cliente e:Clientes){
-            System.out.println("ID de cliente: ");
-            System.out.print(e.getId());
-            System.out.print(" ");
-            System.out.print("Nombre de Cliente: "+e.getNombre());
+
+    public void mostrar() {
+        for (Cliente e : Clientes) {
+            System.out.println("ID de cliente: "+e.getId());
+            System.out.print("Nombre de Cliente: " + e.getNombre());
             System.out.println(" ");
-            System.out.print("Apellido de Cliente: $"+e.getApellido());
+            System.out.print("Apellido de Cliente: " + e.getApellido());
+            System.out.println("\n");
+            Fecha fechas = new Fecha();
+            System.out.println("Fecha de incio: ");
+            System.out.println(fechas.getDia() + " " +fechas.getMes() + " " + fechas.getAnnio());
             System.out.println(" ");
-            //FECHA:
+            System.out.println("Fecha de salida: ");
+            System.out.println(fechas.getDia() + " " +fechas.getMes() + " " + fechas.getAnnio());
+
+            /**
+             * Iterable<Fecha> fecha = null; for (Fecha d : fecha) {
+             * System.out.println("Fecha de incio: ");
+             * System.out.println(d.getDia() + " " + d.getMes() + " " +
+             * d.getAnnio()); System.out.println(" "); System.out.println("Fecha
+             * de salida: "); System.out.println(d.getDia() + " " + d.getMes() +
+             * " " + d.getAnnio());
+             *
+             * System.out.println("\n"); }
+            *
+             */
         }
-        System.out.println("Fecha de incio: ");
-        System.out.println(fechaInicio.getDia()+" "+fechaInicio.getMes()+" "+fechaInicio.getAnnio());
-        System.out.println(" ");
-        System.out.println("Fecha de salida: ");
-        System.out.println(fechaFin.getDia()+" "+fechaFin.getMes()+" "+fechaFin.getAnnio());
-        
-        System.out.println("\n");
     }
 }
+
+/**
+ * System.out.println("Fecha de incio: ");
+ * System.out.println(fechaInicio.getDia()+" "+fechaInicio.getMes()+"
+ * "+fechaInicio.getAnnio()); System.out.println(" "); System.out.println("Fecha
+ * de salida: "); System.out.println(fechaFin.getDia()+" "+fechaFin.getMes()+"
+ * "+fechaFin.getAnnio());
+ *
+ * System.out.println("\n");
+ */
