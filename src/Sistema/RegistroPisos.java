@@ -28,14 +28,18 @@ public class RegistroPisos {
         //MODIFICAR, DEBERIA HACRELO AUTOMATICAMENTE
         //AGREGAR CONDICION QUE LO VERIFIQUE
         System.out.println("Ingrese el parcentaje agregado del piso del piso: ");
+  
        
 
         
         piso.setEstado(true);
 
-   
-        //DEBERIA INDICARSE QUE AL SER LOS ULTIMOS NIVELES SE AGREGARA UN COSTO EXTRA DEL 20% si es E O F 
+          
+        //DEBERIA INDICARSE QUE AL SER LOS ULTIMOS NIVELES SE AGREGARA UN COSTO EXTRA DEL 20% si es E O F
+        System.out.println("Ingrese el nivel de piso(a,b,c,d,e,f)");
         piso.setPiso(leer.next().charAt(0));
+        
+       
     }
 
     public void modificar() {
