@@ -12,23 +12,23 @@ public class Reserva {
     
     private String fechaent;
     private String fechasal;
-    private int dias;
-    private String paquete;
+    //private int dias;
+    //private String paquete;
     
     //Constructor
     
     public Reserva(){}
     //Metodos
 
-    public Reserva(Cliente cliente, Habitacion habitacion, int codigo, String fechaent, String fechasal, int dias, String paquete) {
+    public Reserva(Cliente cliente, Habitacion habitacion, int codigo, String fechaent, String fechasal) {
         this.cliente = cliente;
         this.habitacion = habitacion;
         this.codigo = codigo;
         
         this.fechaent = fechaent;
         this.fechasal = fechasal;
-        this.dias = dias;
-        this.paquete = paquete;
+        //this.dias = dias;
+        //this.paquete = paquete;
         
     }
     
@@ -72,7 +72,7 @@ public class Reserva {
     public void setFechasal(String fechasal) {
         this.fechasal = fechasal;
     }
-
+/*
     public int getDias() {
         return dias;
     }
@@ -88,5 +88,5 @@ public class Reserva {
     public void setPaquete(String paquete) {
         this.paquete = paquete;
     }
-    
+ */ 
 }
