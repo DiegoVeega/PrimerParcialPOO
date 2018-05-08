@@ -28,14 +28,19 @@ public class RegistroPisos {
         //MODIFICAR, DEBERIA HACRELO AUTOMATICAMENTE
         //AGREGAR CONDICION QUE LO VERIFIQUE
         System.out.println("Ingrese el parcentaje agregado del piso del piso: ");
+  
        
 
         
         piso.setEstado(true);
 
-   
-        //DEBERIA INDICARSE QUE AL SER LOS ULTIMOS NIVELES SE AGREGARA UN COSTO EXTRA DEL 20% si es E O F 
+          
+        //DEBERIA INDICARSE QUE AL SER LOS ULTIMOS NIVELES SE AGREGARA UN COSTO EXTRA DEL 20% si es E O F
+        System.out.println("Ingrese el nivel de piso(a,b,c,d,e,f)");
         piso.setPiso(leer.next().charAt(0));
+        
+        
+       
     }
 
     public void modificar() {
@@ -61,7 +66,6 @@ public class RegistroPisos {
     public void remove() {
         Piso piso = new Piso();
         //VERIFICAR ARREGLO DE CARACTERES
-        char[] nombrespisos = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
         int nume;
         System.out.println("escriba el piso que quiere eliminar(a,b,c,etc)");
         Scanner num = new Scanner(System.in);
