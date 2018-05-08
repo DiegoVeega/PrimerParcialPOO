@@ -99,8 +99,73 @@ public class Menu {
                         switch (valor1) {
                             //VERIFICAR POR ERROR EN OUT.
                             case 1:
-                                //Se accede al metodo para agregar
+                                //*************************************************************************AGREGAR LISTA ADD
                                 habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                //SEGUNDO
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                //TERCERO
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                //CUARTO
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                //QUINTO
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                //SEXTO
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                habitaciones.add();
+                                habitaciones.add1();
+                                
                                 System.out.println("\n******************************\n");
                                 //mostrar lo agregado
                                 habitaciones.mostrar();
