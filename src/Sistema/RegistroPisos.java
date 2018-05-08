@@ -39,7 +39,6 @@ public class RegistroPisos {
         System.out.println("Ingrese el nivel de piso(a,b,c,d,e,f)");
         piso.setPiso(leer.next().charAt(0));
         
-        
        
     }
 
@@ -66,6 +65,7 @@ public class RegistroPisos {
     public void remove() {
         Piso piso = new Piso();
         //VERIFICAR ARREGLO DE CARACTERES
+        char[] nombrespisos = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
         int nume;
         System.out.println("escriba el piso que quiere eliminar(a,b,c,etc)");
         Scanner num = new Scanner(System.in);
