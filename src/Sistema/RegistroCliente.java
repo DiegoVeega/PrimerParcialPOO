@@ -65,12 +65,17 @@ public class RegistroCliente {
     }
 
     public void remove() {
-        Cliente cliente = new Cliente();
-        int nume;
-        System.out.println("Segun la lista mostrada luego de ingresar un producto, ingrese el numero correspondiente segun fila del producto que desea remover./n NOTA: LA LISTA EMPIEZA CON EL NUMERO 0. ");
+        System.out.println("ingrese el id de la persona a eliminar");
         Scanner num = new Scanner(System.in);
-        nume = num.nextInt();
-        Clientes.remove(nume);
+        String nom = num.nextLine();
+        int i=0;
+        for(Cliente e : Clientes){
+            if(e.getId().equals(nom)){
+                Clientes.remove(i);
+            }
+            i+=1;  
+        }
+        
     }
 
     public void set() {
