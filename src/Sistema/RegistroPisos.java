@@ -11,6 +11,8 @@ import java.util.Arrays;
 //Esta esperando que se cree la clase piso...
 public class RegistroPisos {
 
+    public static double PocentajeU = 0.20;
+    public static int Porcentaje = 1;
     private final ArrayList<Piso> pisos;
 
     public RegistroPisos() {
@@ -26,12 +28,12 @@ public class RegistroPisos {
         //MODIFICAR, DEBERIA HACRELO AUTOMATICAMENTE
         //AGREGAR CONDICION QUE LO VERIFIQUE
         System.out.println("Ingrese el parcentaje agregado del piso del piso: ");
-        piso.setCosto(leer.nextDouble());
+       
 
         
         piso.setEstado(true);
 
-        System.out.println("Ingrese el piso en que se encuentra la habitacion: ");
+   
         //DEBERIA INDICARSE QUE AL SER LOS ULTIMOS NIVELES SE AGREGARA UN COSTO EXTRA DEL 20% si es E O F 
         piso.setPiso(leer.next().charAt(0));
     }
