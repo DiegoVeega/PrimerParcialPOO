@@ -10,6 +10,8 @@ import java.util.Set;
  */
 public class RegistroHabitacion {
 
+    public static Double Sencillo = 100.00;
+    public static Double Doble = 200.00;
     //Atributos.
     private final ArrayList<Habitacion> habitaciones;
 
@@ -22,53 +24,25 @@ public class RegistroHabitacion {
         Habitacion habitacion = new Habitacion();
 
         habitaciones.add(habitacion);
-/**
-        habitaciones.get(0).setTipoHabitacion("Sencilla");
-        habitaciones.get(0).setEstado(Boolean.TRUE);
+
+        habitacion.setTipoHabitacion("Sencilla");
+        habitacion.setEstado(Boolean.FALSE);
         //VARIABLES GLOBALES.
-        habitaciones.get(0).setPrecio(200.00);
-        */
-
-        //MEJORANDO PROGRAMA.
-        for (int i = 0; i <= 59; i++) {
-            if (i == 0) {
-                habitacion.setTipoHabitacion("Sencilla");
-                habitacion.setEstado(Boolean.TRUE);
-                //VARIABLES GLOBALES.
-                habitacion.setPrecio(200.00);
-                i++;
-            }
-            //INICIA EN 0, LOS PARES SON LAS HABITACIONES IMPARES
-            if (i % 2 == 0) {
-                habitacion.setTipoHabitacion("Sencilla");
-                habitacion.setEstado(Boolean.TRUE);
-                //VARIABLES GLOBALES.
-                habitacion.setPrecio(200.00);
-                i++;
-            } else {
-                habitacion.setTipoHabitacion("Doble");
-                habitacion.setEstado(Boolean.TRUE);
-                //VARIABLES GLOBALES.
-                habitacion.setPrecio(300.00);
-                i++;
-            }
+        habitacion.setPrecio(Sencillo);
     }
+
+    public void add1() {
+        Habitacion habitacion = new Habitacion();
+
+        habitaciones.add(habitacion);
+
+        habitacion.setTipoHabitacion("Doble");
+        habitacion.setEstado(Boolean.FALSE);
+        //VARIABLES GLOBALES.
+        habitacion.setPrecio(Doble);
     }
-    /**
-     * Scanner leer=new Scanner(System.in); //PARA SABER EL TIPO DE HABITACION
-     * SE PIENSA AGREGAR UN METODO QUE VERIFIQUE SI EL NUMERO DE HABITACION ES
-     * PAR O NO. System.out.println("Ingrese tipo de habitacion, Doble o
-     * Sencilla."); habitacion.setTipoHabitacion(leer.nextLine());
-     *
-     *
-     * habitacion.setEstado(Boolean.TRUE);
-     *
-     * System.out.println("Ingrese el precio de la habitacion: ");
-     * habitacion.setPrecio(leer.nextDouble()); //SET ESTADO
-     */
 
-
-public void remove() {
+    public void remove() {
         Habitacion habitacion = new Habitacion();
         int nume;
         System.out.println("Segun la lista mostrada luego de ingresar un producto, ingrese el numero correspondiente segun fila de la habitacion que desea remover.\n NOTA: LA LISTA EMPIEZA CON EL NUMERO 0. ");
@@ -86,7 +60,7 @@ public void remove() {
         System.out.println("Segun la lista mostrada luego de ingresar un registro, ingrese el numero correspondiente segun fila de la habitacion  que desea modificar.\n NOTA: LA LISTA EMPIEZA CON EL NUMERO 0. ");
         num = cambio.nextInt();
 
-        habitaciones.get(num).setEstado(Boolean.FALSE);
+        habitaciones.get(num).setEstado(Boolean.TRUE);
 
         System.out.println("Ingrese Tipo de habitacion: ");
         habitaciones.get(num).setTipoHabitacion(cambio.nextLine());
@@ -101,12 +75,6 @@ public void remove() {
         for (Habitacion e : habitaciones) {
             System.out.println("Tipo de habitacion: " + e.getTipoHabitacion() + " Estado: " + e.getEstado() + " Precio: $" + e.getPrecio());
             System.out.println("\n");
-            /**
-             * System.out.print(" "); System.out.print("Estado:
-             * "+e.getEstado()); System.out.println(" ");
-             * System.out.print("Precio: $"+e.getPrecio());
-             * System.out.println("\n");
-             */
         }
     }
 }
