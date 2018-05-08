@@ -1,6 +1,5 @@
 package Sistema;
 
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -8,66 +7,70 @@ import java.util.Scanner;
  *
  * @author Julio Flores <00081817@uca.edu.sv>
  */
-public class RegistroReserva{
+public class RegistroReserva {
+
     private final ArrayList<Reserva> reservas;
-    
-    public RegistroReserva(){
+
+    public RegistroReserva() {
         reservas = new ArrayList<>();
     }
-    
-    public void add(){
+
+    public void add() {
         Reserva reserva = new Reserva();
-        
+
         reservas.add(reserva);
         Scanner leer = new Scanner(System.in);
-        
-        
+
         System.out.println("Cuantas reservas desea hacer: ");
-           
+
         //while (leer.nextInt() < 1 && leer.nextInt() > 2){
-        if (leer.nextInt() == 1){
+        if (leer.nextInt() == 1) {
             //System.out.println("Se hizo 1 reserva con exito... Ahora ingrese los datos de la reserva: ");
-                //Pidiendo el codigo 
-            
+            //Pidiendo el codigo 
+
             System.out.println("Ingrese el codigo de la reserva: ");
             reserva.setCodigo(leer.nextInt());
-        }
-        else{
+        } else {
             System.out.println("Se hicieron 2 reservas...");
             //Pidiendo el codigo 
             System.out.println("Ingrese el codigo de la reserva: ");
             reserva.setCodigo(leer.nextInt());
         }
     }
-        
-    public void remove(){
+
+    public void remove() {
         System.out.println("ingrese codigo de reserva a eliminar");
         Scanner numero = new Scanner(System.in);
-        int eliminar=numero.nextInt();
-        int j=0;
+        int eliminar = numero.nextInt();
+        int j = 0;
         for (Reserva e : reservas) {
-            if (e.getCodigo() ==(eliminar)){
+            if (e.getCodigo() == (eliminar)) {
                 reservas.remove(j);
                 break;
             }
-            j+=1;
+            j += 1;
         }
     }
-    
-    public void modificar(){
-        Reserva reserva = new Reserva();
+
+    public void modificar() {
         int numero;
         Scanner modificar = new Scanner(System.in);
-        System.out.println("Segun la lista mostrada luego de ingresar un producto, ingrese el numero correspondiente segun fila de la habitacion que desea remover.\n NOTA: LA LISTA EMPIEZA CON EL NUMERO 0.  ");
-        numero=modificar.nextInt();
-        reserva.setCodigo(modificar.nextInt());
-        reservas.set(numero, reserva);
+        System.out.println("Ingrese codigo de reserva que desea modificar");
+        numero = modificar.nextInt();
+        int j = 0;
+        for (Reserva e : reservas) {
+            if (e.getCodigo() == (numero)) {
+                reservas.get(j).setCodigo(modificar.nextInt());
+            }
+            j += 1;
+        }
     }
-    public void mostrar(){
-        
-        for (Reserva e:reservas){
+
+    public void mostrar() {
+
+        for (Reserva e : reservas) {
             //Orden
-            System.out.println("Codigo de reserva: "+e.getCodigo());
+            System.out.println("Codigo de reserva: " + e.getCodigo());
             System.out.println("\n");
         }
     }
