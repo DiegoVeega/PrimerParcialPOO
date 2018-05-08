@@ -10,8 +10,11 @@ public class Reserva {
     public Habitacion habitacion;
     private int codigo;
     
-    private String fechaent;
-    private String fechasal;
+    //FECHAS RETIRADAS YA QUE SE ESPECIFICAN EN OTRA CLASE. INNECESARIO.
+    
+    //private String fechaent;
+    //private String fechasal;
+    
     //private int dias;
     //private String paquete;
     
@@ -24,9 +27,10 @@ public class Reserva {
         this.cliente = cliente;
         this.habitacion = habitacion;
         this.codigo = codigo;
-        
+        /*
         this.fechaent = fechaent;
         this.fechasal = fechasal;
+        */
         //this.dias = dias;
         //this.paquete = paquete;
         
@@ -56,7 +60,7 @@ public class Reserva {
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
-
+/**
     public String getFechaent() {
         return fechaent;
     }
@@ -72,6 +76,7 @@ public class Reserva {
     public void setFechasal(String fechasal) {
         this.fechasal = fechasal;
     }
+    */
 /*
     public int getDias() {
         return dias;
