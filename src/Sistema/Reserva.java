@@ -8,7 +8,7 @@ public class Reserva {
     //Atributos
     public Cliente cliente;
     public Habitacion habitacion;
-    private String codigo;
+    private int codigo;
     
     private String fechaent;
     private String fechasal;
@@ -20,7 +20,7 @@ public class Reserva {
     public Reserva(){}
     //Metodos
 
-    public Reserva(Cliente cliente, Habitacion habitacion, String codigo, String fechaent, String fechasal, int dias, String paquete) {
+    public Reserva(Cliente cliente, Habitacion habitacion, int codigo, String fechaent, String fechasal, int dias, String paquete) {
         this.cliente = cliente;
         this.habitacion = habitacion;
         this.codigo = codigo;
@@ -49,11 +49,11 @@ public class Reserva {
         this.habitacion = habitacion;
     }
 
-    public String getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(String codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
