@@ -110,8 +110,8 @@ public class RegistroReserva{
             
             System.out.println("Fecha de entrada: "+e.getFechaent());
             System.out.println("Fecha de salida: "+e.getFechasal());
-            System.out.println("Tipo de paquete: "+e.getPaquete());
-            System.out.println("Dias de reserva: "+e.getDias());
+            //System.out.println("Tipo de paquete: "+e.getPaquete());
+            //System.out.println("Dias de reserva: "+e.getDias());
             
             System.out.println("\n");
         }
