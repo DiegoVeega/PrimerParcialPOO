@@ -26,10 +26,12 @@ public class RegistroReserva{
            
         //while (leer.nextInt() < 1 && leer.nextInt() > 2){
         if (leer.nextInt() == 1){
-            System.out.println("Se hizo 1 reserva con exito... Ahora ingrese los datos de la reserva: ");
+            //System.out.println("Se hizo 1 reserva con exito... Ahora ingrese los datos de la reserva: ");
                 //Pidiendo el codigo 
+            
             System.out.println("Ingrese el codigo de la reserva: ");
-            reserva.setCodigo(leer.nextLine());
+            reserva.setCodigo(leer.nextInt());
+            
         
         //Obteniendo fecha de entrada y salida...
         
@@ -40,18 +42,18 @@ public class RegistroReserva{
             reserva.setFechasal(leer.nextLine());
         
         //Tipo de paquete
-            System.out.println("Ingrese el tipo de paquete, puede ser PREMIUN o BASICO: ");
-            reserva.setPaquete(leer.nextLine());
+            //System.out.println("Ingrese el tipo de paquete, puede ser PREMIUN o BASICO: ");
+            //reserva.setPaquete(leer.nextLine());
         
         //Dias de reserva
-            System.out.println("Ingrese los dias de reserva: ");
-                reserva.setDias(leer.nextInt());
+            //System.out.println("Ingrese los dias de reserva: ");
+            //reserva.setDias(leer.nextInt());
         }
         else{
             System.out.println("Se hicieron 2 reservas...");
             //Pidiendo el codigo 
             System.out.println("Ingrese el codigo de la reserva: ");
-            reserva.setCodigo(leer.nextLine());
+            reserva.setCodigo(leer.nextInt());
         
         //Obteniendo fecha de entrada y salida...
         
@@ -62,12 +64,12 @@ public class RegistroReserva{
             reserva.setFechasal(leer.nextLine());
         
         //Tipo de paquete
-            System.out.println("Ingrese el tipo de paquete, puede ser PREMIUN o BASICO: ");
-            reserva.setPaquete(leer.nextLine());
+            //System.out.println("Ingrese el tipo de paquete, puede ser PREMIUN o BASICO: ");
+            //reserva.setPaquete(leer.nextLine());
         
         //Dias de reserva
-            System.out.println("Ingrese los dias de reserva: ");
-            reserva.setDias(leer.nextInt());
+            //System.out.println("Ingrese los dias de reserva: ");
+            //reserva.setDias(leer.nextInt());
         }
     }
         
@@ -105,12 +107,12 @@ public class RegistroReserva{
         for (Reserva e:reservas){
             //Orden
             System.out.println("Codigo de reserva: "+e.getCodigo());
-            /**
+            
             System.out.println("Fecha de entrada: "+e.getFechaent());
             System.out.println("Fecha de salida: "+e.getFechasal());
             System.out.println("Tipo de paquete: "+e.getPaquete());
             System.out.println("Dias de reserva: "+e.getDias());
-            */
+            
             System.out.println("\n");
         }
     }
