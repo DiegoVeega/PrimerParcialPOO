@@ -23,16 +23,18 @@ public class Menu {
     }
 
     public void Opciones() {
-        int op = 6;
+        int op = 7;
         Scanner leer = new Scanner(System.in);
 
-        while (op != 5) {
-            System.out.println("Bienvenido, por favor complete cada uno de los siguientes registros. ");
+        while (op != 6) {
+            System.out.println("Bienvenido, por favor complete cada uno de los siguientes registros. \n");
             System.out.println("1. Registro de Clientes.");
             System.out.println("2. Registro de Habitaciones.");
             System.out.println("3. Registro de Pisos.");
-            System.out.println("4. Registro de Reservas.");
-            System.out.println("5. Salir.");
+            System.out.println("4. Registro de Reservas.\n");
+            System.out.println("Una vez completados los campos anteriores, puede realizar: \n");
+            System.out.println("5. Mostrar registro completo.");
+            System.out.println("6. Salir.");
 
             op = leer.nextInt();
             switch (op) {
@@ -75,7 +77,7 @@ public class Menu {
                                 break;
                             case 4:
                                 //Se saldra del programa.
-                                System.out.println("ADIOS. Saliendo del sistema.");
+                                System.out.println("ADIOS. Saliendo del REGISTRO.");
                                 break;
                             default:
                                 System.out.println("Usted ingreso " + valor + " Por favor ingrese un valor valido.");
@@ -89,9 +91,9 @@ public class Menu {
                     RegistroHabitacion habitaciones = new RegistroHabitacion();
                     while (valor1 != 4) {
                         System.out.println("Seleccione una opcion a realizar: \n");
-                        System.out.println("1. Agregar Habitacion.");
+                        System.out.println("1. Lista habitaciones.");
                         System.out.println("2. Eliminar/Descartar Habitacion.");
-                        System.out.println("3. Modificar Habitacion.");
+                        System.out.println("3. Modificar precio de habitacion especifica (Su uso efecta el estado de la habitacion).");
                         System.out.println("4. Salir.\n");
 
                         valor1 = lec.nextInt();
@@ -189,7 +191,7 @@ public class Menu {
                                 break;
                             case 4:
                                 //Se saldra del programa.
-                                System.out.println("ADIOS. Saliendo del sistema.");
+                                System.out.println("ADIOS. Saliendo del REGISTRO.");
                                 break;
                             default:
                                 System.out.println("Usted ingreso " + valor1 + " Por favor ingrese un valor valido.");
@@ -237,7 +239,7 @@ public class Menu {
                                 break;
                             case 4:
                                 //Se saldra del programa.
-                                System.out.println("ADIOS. Saliendo del sistema.");
+                                System.out.println("ADIOS. Saliendo del REGISTRO.");
                                 break;
                             default:
                                 System.out.println("Usted ingreso " + valor2 + " Por favor ingrese un valor valido.");
@@ -264,28 +266,28 @@ public class Menu {
                                 reservas.add();
                                 System.out.println("\n******************************\n");
                                 //mostrar lo agregado
-                                System.out.println("\n******************************\n");
                                 reservas.mostrar();
+                                System.out.println("\n******************************\n");
                                 break;
                             case 2:
                                 //Se accede al metodo para eliminar
                                 reservas.remove();
                                 System.out.println("\n******************************\n");
                                 //mostrar lo agregado
-                                System.out.println("\n******************************\n");
                                 reservas.mostrar();
+                                System.out.println("\n******************************\n");
                                 break;
                             case 3:
                                 //Se accede al metodo para modificar
                                 reservas.modificar();
                                 System.out.println("\n******************************\n");
                                 //mostrar lo agregado
-                                System.out.println("\n******************************\n");
                                 reservas.mostrar();
+                                System.out.println("\n******************************\n");
                                 break;
                             case 4:
                                 //Se saldra del programa.
-                                System.out.println("ADIOS. Saliendo del sistema.");
+                                System.out.println("ADIOS. Saliendo del REGISTRO.");
                                 break;
                             default:
                                 System.out.println("Usted ingreso " + valor3 + " Por favor ingrese un valor valido.");
@@ -293,6 +295,21 @@ public class Menu {
                     }
                     break;
                 case 5:
+                    Scanner escri=new Scanner(System.in);
+                    //Nueva instancia  de las clases, necesario para realizar llamada de metodos.
+                    RegistroCliente cliente=new RegistroCliente();
+                    RegistroReserva reserva=new RegistroReserva();
+                    RegistroPisos piso =new RegistroPisos();
+                    RegistroHabitacion habitacion=new RegistroHabitacion();
+                    System.out.println("Ingrese posicion de la informacion pra la tabla que desea mostrar (Todos los regitros en la misma posicion)");
+                    int i=escri.nextInt();
+                    //LLamada de todos los metodos mostrar, para presentar la tabla de registros completa.
+                    cliente.mostrar();
+                    reserva.mostrar();
+                    piso.mostrar();
+                    habitacion.mostrar();
+                    break;
+                case 6:
                     //Se saldra del programa.
                     System.out.println("ADIOS. Saliendo del sistema.");
                     break;
