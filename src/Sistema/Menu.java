@@ -262,6 +262,7 @@ public class Menu {
                                 System.out.println("\n******************************\n");
                                 //mostrar lo agregado
                                 System.out.println("\n******************************\n");
+                                reservas.mostrar();
                                 break;
                             case 2:
                                 //Se accede al metodo para eliminar
@@ -269,6 +270,7 @@ public class Menu {
                                 System.out.println("\n******************************\n");
                                 //mostrar lo agregado
                                 System.out.println("\n******************************\n");
+                                reservas.mostrar();
                                 break;
                             case 3:
                                 //Se accede al metodo para modificar
@@ -276,6 +278,7 @@ public class Menu {
                                 System.out.println("\n******************************\n");
                                 //mostrar lo agregado
                                 System.out.println("\n******************************\n");
+                                reservas.mostrar();
                                 break;
                             case 4:
                                 //Se saldra del programa.
