@@ -8,28 +8,32 @@ public class Reserva {
     //Atributos
     public Cliente cliente;
     public Habitacion habitacion;
-    private String codigo;
-    /**
-    private String fechaent;
-    private String fechasal;
-    private int dias;
-    private String paquete;
-    */
+    private int codigo;
+    
+    //FECHAS RETIRADAS YA QUE SE ESPECIFICAN EN OTRA CLASE. INNECESARIO.
+    
+    //private String fechaent;
+    //private String fechasal;
+    
+    //private int dias;
+    //private String paquete;
+    
     //Constructor
     
     public Reserva(){}
     //Metodos
 
-    public Reserva(Cliente cliente, Habitacion habitacion, String codigo, String fechaent, String fechasal, int dias, String paquete) {
+    public Reserva(Cliente cliente, Habitacion habitacion, int codigo, String fechaent, String fechasal) {
         this.cliente = cliente;
         this.habitacion = habitacion;
         this.codigo = codigo;
-        /**
+        /*
         this.fechaent = fechaent;
         this.fechasal = fechasal;
-        this.dias = dias;
-        this.paquete = paquete;
         */
+        //this.dias = dias;
+        //this.paquete = paquete;
+        
     }
     
     //Setters and Getters...
@@ -49,11 +53,11 @@ public class Reserva {
         this.habitacion = habitacion;
     }
 
-    public String getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(String codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 /**
@@ -72,7 +76,8 @@ public class Reserva {
     public void setFechasal(String fechasal) {
         this.fechasal = fechasal;
     }
-
+    */
+/*
     public int getDias() {
         return dias;
     }
@@ -88,5 +93,5 @@ public class Reserva {
     public void setPaquete(String paquete) {
         this.paquete = paquete;
     }
-    */
+ */ 
 }
