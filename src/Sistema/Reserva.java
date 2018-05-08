@@ -9,12 +9,12 @@ public class Reserva {
     public Cliente cliente;
     public Habitacion habitacion;
     private String codigo;
-    /**
+    
     private String fechaent;
     private String fechasal;
     private int dias;
     private String paquete;
-    */
+    
     //Constructor
     
     public Reserva(){}
@@ -24,12 +24,12 @@ public class Reserva {
         this.cliente = cliente;
         this.habitacion = habitacion;
         this.codigo = codigo;
-        /**
+        
         this.fechaent = fechaent;
         this.fechasal = fechasal;
         this.dias = dias;
         this.paquete = paquete;
-        */
+        
     }
     
     //Setters and Getters...
@@ -56,7 +56,7 @@ public class Reserva {
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-/**
+
     public String getFechaent() {
         return fechaent;
     }
@@ -88,5 +88,5 @@ public class Reserva {
     public void setPaquete(String paquete) {
         this.paquete = paquete;
     }
-    */
+    
 }
