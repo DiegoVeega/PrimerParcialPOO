@@ -65,15 +65,16 @@ public class RegistroCliente {
     }
 
     public void remove() {
-        System.out.println("ingrese el id de la persona a eliminar");
         Scanner num = new Scanner(System.in);
+        System.out.println("ingrese el id de la persona a eliminar");
         String nom = num.nextLine();
-        int i=0;
-        for(Cliente e : Clientes){
-            if(e.getId().equals(nom)){
-                Clientes.remove(i);
+        int j=0;
+        for (Cliente e : Clientes) {
+            if (e.getId().equals(nom)){
+                Clientes.remove(j);
+                break;
             }
-            i+=1;  
+            j+=1;
         }
         
     }
@@ -81,7 +82,6 @@ public class RegistroCliente {
     public void set() {
         Scanner cambio = new Scanner(System.in);
         System.out.println("Ingrese el Id de la persona a modificar");
-        //num = cambio.nextInt();
         String nom = cambio.nextLine();
         int i=0;
         for (Cliente e : Clientes) {
