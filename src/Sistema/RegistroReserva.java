@@ -41,12 +41,17 @@ public class RegistroReserva{
     }
         
     public void remove(){
-        Reserva reserva = new Reserva();
-        int eliminar;
-        System.out.println("Segun la lista mostrada luego de ingresar un producto, ingrese el numero correspondiente segun fila de la habitacion que desea remover.\n NOTA: LA LISTA EMPIEZA CON EL NUMERO 0. ");
+        System.out.println("ingrese codigo de reserva a eliminar");
         Scanner numero = new Scanner(System.in);
-        eliminar = numero.nextInt();
-        reservas.remove(eliminar);
+        int eliminar=numero.nextInt();
+        int j=0;
+        for (Reserva e : reservas) {
+            if (e.getCodigo() ==(eliminar)){
+                reservas.remove(j);
+                break;
+            }
+            j+=1;
+        }
     }
     
     public void modificar(){
@@ -55,6 +60,8 @@ public class RegistroReserva{
         Scanner modificar = new Scanner(System.in);
         System.out.println("Segun la lista mostrada luego de ingresar un producto, ingrese el numero correspondiente segun fila de la habitacion que desea remover.\n NOTA: LA LISTA EMPIEZA CON EL NUMERO 0.  ");
         numero=modificar.nextInt();
+        reserva.setCodigo(modificar.nextInt());
+        reservas.set(numero, reserva);
     }
     public void mostrar(){
         
