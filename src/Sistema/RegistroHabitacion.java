@@ -62,9 +62,6 @@ public class RegistroHabitacion {
 
         habitaciones.get(num).setEstado(Boolean.TRUE);
 
-        System.out.println("Ingrese Tipo de habitacion: ");
-        habitaciones.get(num).setTipoHabitacion(cambio.nextLine());
-
         System.out.println("Ingrese nuevo precio para la habitacion: ");
         habitaciones.get(num).setPrecio(cambio.nextDouble());
         //A TRAVES DE CONDICION PARA SIMPLIFICAR.
