@@ -216,6 +216,7 @@ public class Menu {
                                 pisos.add();
                                 System.out.println("\n******************************\n");
                                 //mostrar lo agregado
+                                pisos.mostrar();
                                 System.out.println("\n******************************\n");
                                 break;
                             case 2:
@@ -223,6 +224,7 @@ public class Menu {
                                 pisos.remove();
                                 System.out.println("\n******************************\n");
                                 //mostrar lo agregado
+                                pisos.mostrar();
                                 System.out.println("\n******************************\n");
                                 break;
                             case 3:
@@ -230,6 +232,7 @@ public class Menu {
                                 pisos.modificar();
                                 System.out.println("\n******************************\n");
                                 //mostrar lo agregado
+                                pisos.mostrar();
                                 System.out.println("\n******************************\n");
                                 break;
                             case 4:
