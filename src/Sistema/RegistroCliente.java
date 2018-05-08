@@ -22,7 +22,7 @@ public class RegistroCliente {
     public RegistroCliente() {
         Clientes = new ArrayList<>();
     }
-
+    
     public void add() {
 
         Cliente cliente = new Cliente();
